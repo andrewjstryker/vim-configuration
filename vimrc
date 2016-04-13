@@ -3,8 +3,7 @@
 " Last Modified:  Mon Sep 19 20:20:30 PDT 2005
 " Maintainer:  Andrew Stryker <axs@sdf.org>
 " Description:  Initialization file for the Vim text editor.  This file
-" contains contex sensitive settings and mappings for more effective text
-" editting.
+" contains sensitive settings and mappings for more effective text editting.
 "
 " Organization is as follows:
 "	- Vim global environment options
@@ -35,6 +34,21 @@
 " provided that this is done free of charge and that all of the above text is
 " retained.
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+"
+"	Pathogen to manage Vim packages
+"
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+
+filetype off " Pathogen needs to run before plugin indent on
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+"execute pathogen#helptags() " generate helptags for everything in 'runtimepath'
+
+filetype plugin indent on
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
@@ -126,7 +140,7 @@ set visualbell		" screen flash instead of beeps
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
 " Options when in a GUI
-" 
+"
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
 if has("gui_running")
@@ -145,20 +159,6 @@ if &columns > 80
   set number            " show line numbers on the right hand margin
   set relativenumber    " make the numbers relative to the cursor line
 endif
-
-"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-"
-"	Pathogen to manage vim packages
-"
-"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-
-filetype off " Pathogen needs to run before plugin indent on
-
-" call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-call pathogen#helptags() " generate helptags for everything in 'runtimepath'
-
-filetype plugin indent on
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
