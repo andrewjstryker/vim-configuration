@@ -6,7 +6,7 @@ I maintain Vim configuration files across several machines.  Since I use more
 than a few plugins, this can be a bit cumbersome.  You can view this project
 as my notes on synchronizing Vim configuration.
 
-A differnt perspective is that this project is sort-of a Vim plugin
+A different perspective is that this project is sort-of a Vim plugin
 distribution.  When complete, you will be able to clone this to you ~/.vim
 directory and be free to go.  You will have the plugins that you will want to
 use most *and* you will have confidence that each plugin works with all the
