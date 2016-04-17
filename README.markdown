@@ -1,5 +1,4 @@
 # Vim Configuration
----
 
 Warning: this is a work in progress and quite likely not working yet.
 
