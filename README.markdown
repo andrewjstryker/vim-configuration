@@ -40,18 +40,17 @@ Does this sound good?  Then let's get started.
 
 Installing this project takes a few steps.
 
-1. Clone the project into `~/.vim` (on `vimfiles` if you are on Windows) directory:
+Clone the project into `~/.vim` directory:
 
     git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 
-
-
-2. [Clone each of the
-   submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+[Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
 
     cd ~/.vim
     git submodule init
     git submodule update
+
+If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
 ## Contributing
 
