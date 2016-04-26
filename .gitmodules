@@ -106,3 +106,9 @@
 [submodule "bundle/vim-tmux-focus-events"]
 	path = bundle/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule "bundle/noplaintext/5890634"]
+	path = bundle/noplaintext/5890634
+	url = https://gist.github.com/tejr/5890634
+[submodule "bundle/noplaintext/plugin"]
+	path = bundle/noplaintext/plugin
+	url = https://gist.github.com/tejr/5890634
