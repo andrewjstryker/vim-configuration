@@ -52,5 +52,43 @@ Clone the project into `~/.vim` directory:
 
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
-## Contributing
+## Managing Submodules
 
+
+### Github Gists
+
+Sometimes you might want to directly include the sub-tree of a repository.  Perhaps the file exists as
+a [Github Gist](https://gist.github.com) or there is a Vim script that is part
+of another a non-Vim package. [Git supports working with sub-trees.](http://jasonkarns.com/blog/subdirectory-checkouts-with-git-sparse-checkout/)
+
+Here is an example for including Tom Ryder's script that prevents Vim from
+writing files to temporary directories:
+
+  1. Git enables sub-trees through the `sparsecheckout` option. This is only
+     onlly needs to be done once (and already is in this distribution).
+
+        cd ~/.vim
+        git config core.sparsecheckout true
+
+  2. Next, we create a place for our new 'package' that is not really
+     a package.
+
+        cd bundle
+        mkdir noplaintext
+
+  3. We then clone the sub-tree we want into new directory. In this example,
+     we place the sub-tree into a `plugin` directory as that is the best fit.
+     We are also pulling this content as a submodule, consistent with how we
+     are managing other packages.
+
+        cd noplaintext
+        git submodule add https://gist.github.com/tejr/5890634 plugin
+
+  4. Last, we commit changes.  Note, that cannot be in the sub-tree directory
+     when we perform the commit.
+
+        git commit
+
+Now, Vim will execute the new pseudo package every time we start it.
+
+## Contributing
