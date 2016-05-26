@@ -7,10 +7,9 @@ than a few plugins, this can be a bit cumbersome.  You can view this project
 as my notes on synchronizing Vim configuration.
 
 A different perspective is that this project is sort-of a Vim plugin
-distribution.  When complete, you will be able to clone this to you ~/.vim
-directory and be free to go.  You will have the plugins that you will want to
-use most *and* you will have confidence that each plugin works with all the
-other plugins.
+distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
+and have a 'batteries included' Vim, complete with popular plugins for general
+purpose text editing.
 
 The approach the project takes primarly builds on two tools:
 
@@ -40,22 +39,23 @@ Does this sound good?  Then let's get started.
 
 Installing this project takes a few steps.
 
-Clone the project into `~/.vim` directory:
 
-    git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
+  1.  Clone the project into `~/.vim` directory:
 
-[Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+        git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 
-    cd ~/.vim
-    git submodule init
-    git submodule update
+  2.  [Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+
+        cd ~/.vim
+        git submodule init
+        git submodule update
 
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
 ## Managing Submodules
 
 
-### Github Gists
+### Github Gists and Sub-Trees
 
 Sometimes you might want to directly include the sub-tree of a repository.  Perhaps the file exists as
 a [Github Gist](https://gist.github.com) or there is a Vim script that is part
