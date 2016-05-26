@@ -13,32 +13,32 @@ purpose text editing.
 
 The approach the project takes primarly builds on two tools:
 
-* [Pathogen](https://github.com/tpope/vim-pathogen): Tim Pope's excellent
-      and light-weight package management system.  Pathogen is *not* really
-      a package manager. Pathogen is a library for manipulating the
-      `'runtimepath'`.  Once you have that, just stand out of the way and let
-      git manage packages.
+  * [Pathogen](https://github.com/tpope/vim-pathogen): Tim Pope's excellent
+    and light-weight package management system.  Pathogen is *not* really
+    a package manager.  Pathogen is a library for manipulating the
+    `'runtimepath'`.  Once you have that, pathogen just stands out of the
+    way and let git manage packages.
 
-* [Git submodules](https://git-scm.com/docs/git-submodule): the
-      functionality within git to manage external dependencies.  That is
-      exactly how we treat each of the plugins.  We want to manage which
-      version of a plugin we are using. We otherwise don't care about the
-      development path of a plugin.
+  * [Git submodules](https://git-scm.com/docs/git-submodule): the
+    functionality within git to manage external dependencies.  That is
+    exactly how we treat each of the plugins.  We want to manage which
+    version of a plugin we are using. We otherwise don't care about the
+    development path of a plugin.
 
 All this project does is:
 
-1. Maintian sensible vimrc file that works with this system
+  1. Maintian sensible `vimrc` file that works across different operating
+     systems
 
-2. Track all external plugins with git submodules
+  2. Track all external plugins with git submodules
 
-3. Provide documentation and a few helper utilities
+  3. Provide documentation and a few helper utilities
 
 Does this sound good?  Then let's get started.
 
 ## Installation
 
 Installing this project takes a few steps.
-
 
   1.  Clone the project into `~/.vim` directory:
 
@@ -57,9 +57,11 @@ If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
 ### Github Gists and Sub-Trees
 
-Sometimes you might want to directly include the sub-tree of a repository.  Perhaps the file exists as
-a [Github Gist](https://gist.github.com) or there is a Vim script that is part
-of another a non-Vim package. [Git supports working with sub-trees.](http://jasonkarns.com/blog/subdirectory-checkouts-with-git-sparse-checkout/)
+Sometimes you might want to directly include the sub-tree of a repository.
+Perhaps the file exists as a [Github Gist](https://gist.github.com) or there
+is a Vim script that is part of another a non-Vim package. [Git supports
+working with
+sub-trees.](http://jasonkarns.com/blog/subdirectory-checkouts-with-git-sparse-checkout/)
 
 Here is an example for including Tom Ryder's script that prevents Vim from
 writing files to temporary directories:
@@ -84,11 +86,22 @@ writing files to temporary directories:
         cd noplaintext
         git submodule add https://gist.github.com/tejr/5890634 plugin
 
-  4. Last, we commit changes.  Note, that cannot be in the sub-tree directory
+  4. Last, we commit changes.  Note, we cannot be in the sub-tree directory
      when we perform the commit.
 
+        cd ..
         git commit
 
 Now, Vim will execute the new pseudo package every time we start it.
 
+## Branches
+
+We also use the git concept of branches to manage packages.  Most of the time,
+all I want are plugins for editing plain text.  Sometimes, I want specialized
+tools for programming or data analysis. Keeping different groups of packages
+in the same repository is cheap since we are using submodules. The primary
+difference between branches are references to other repositories.
+
 ## Contributing
+
+## License
