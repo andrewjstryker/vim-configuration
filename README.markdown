@@ -94,6 +94,20 @@ writing files to temporary directories:
 
 Now, Vim will execute the new pseudo package every time we start it.
 
+We will eventually want to update sub-trees. We can either do this one
+sub-tree at a time or all of them at once:
+
+   * `git pull` within a sub-tree to update that sub-tree
+
+   * `git submodule foreach git pull` in the `bundle` directory to update
+       *all* sub-tree
+
+If the pull works smoothly, we do the typical commit dance from the `.vim`
+directory:
+
+      git add bundle/*
+      git commit -m "Updated packges"
+
 ## Branches
 
 We also use the git concept of branches to manage packages.  Most of the time,

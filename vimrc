@@ -269,7 +269,7 @@ if &t_Co > 1 || has("gui_running")
         if has("gui_running")
             set background=light
             " TODO: need exception catching and fallbacks
-            set guifont=DejaVu_Sans_Mono:h9:cANSI
+            set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
         else
             set background=dark
             if &term == "xterm"
