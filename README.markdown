@@ -109,6 +109,14 @@ directory:
       git add bundle/*
       git commit -m "Updated packges"
 
+## References
+
+Here are places learn more about managing your installation and the packages
+that I have installed:
+
+   * Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
+     blog article contains quite a bit of good advice
+
 
 ## Contributing
 
