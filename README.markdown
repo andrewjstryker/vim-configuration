@@ -72,7 +72,8 @@ writing files to temporary directories:
         cd ~/.vim
         git config core.sparsecheckout true
 
-  2. Next, we create a place for our new 'package' that is not really
+  2. Next, we
+  create a place for our new 'package' that is not really
      a package.
 
         cd bundle
@@ -108,13 +109,6 @@ directory:
       git add bundle/*
       git commit -m "Updated packges"
 
-## Branches
-
-We also use the git concept of branches to manage packages.  Most of the time,
-all I want are plugins for editing plain text.  Sometimes, I want specialized
-tools for programming or data analysis. Keeping different groups of packages
-in the same repository is cheap since we are using submodules. The primary
-difference between branches are references to other repositories.
 
 ## Contributing
 
