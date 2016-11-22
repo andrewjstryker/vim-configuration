@@ -115,7 +115,11 @@ Here are places learn more about managing your installation and the packages
 that I have installed:
 
    * Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
-     blog article contains quite a bit of good advice
+     blog article contains quite a bit of good advice on how to write a good
+     vimrc file.
+
+  * [VimAwesome](https://vimawesome.com) has a superb interface to Vim
+    plugins.
 
 
 ## Contributing
