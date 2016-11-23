@@ -7,32 +7,32 @@ than a few plugins, this can be a bit cumbersome.  You can view this project
 as my notes on synchronizing Vim configuration.
 
 A different perspective is that this project is sort-of a Vim plugin
-distribution.  When complete, you will be able to clone this to you ~/.vim
-directory and be free to go.  You will have the plugins that you will want to
-use most *and* you will have confidence that each plugin works with all the
-other plugins.
+distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
+and have a 'batteries included' Vim, complete with popular plugins for general
+purpose text editing.
 
 The approach the project takes primarly builds on two tools:
 
-* [Pathogen](https://github.com/tpope/vim-pathogen): Tim Pope's excellent
-      and light-weight package management system.  Pathogen is *not* really
-      a package manager. Pathogen is a library for manipulating the
-      `'runtimepath'`.  Once you have that, just stand out of the way and let
-      git manage packages.
+  * [Pathogen](https://github.com/tpope/vim-pathogen): Tim Pope's excellent
+    and light-weight package management system.  Pathogen is *not* really
+    a package manager.  Pathogen is a library for manipulating the
+    `'runtimepath'`.  Once you have that, pathogen just stands out of the
+    way and let git manage packages.
 
-* [Git submodules](https://git-scm.com/docs/git-submodule): the
-      functionality within git to manage external dependencies.  That is
-      exactly how we treat each of the plugins.  We want to manage which
-      version of a plugin we are using. We otherwise don't care about the
-      development path of a plugin.
+  * [Git submodules](https://git-scm.com/docs/git-submodule): the
+    functionality within git to manage external dependencies.  That is
+    exactly how we treat each of the plugins.  We want to manage which
+    version of a plugin we are using. We otherwise don't care about the
+    development path of a plugin.
 
 All this project does is:
 
-1. Maintian sensible vimrc file that works with this system
+  1. Maintian sensible `vimrc` file that works across different operating
+     systems
 
-2. Track all external plugins with git submodules
+  2. Track all external plugins with git submodules
 
-3. Provide documentation and a few helper utilities
+  3. Provide documentation and a few helper utilities
 
 Does this sound good?  Then let's get started.
 
@@ -40,22 +40,89 @@ Does this sound good?  Then let's get started.
 
 Installing this project takes a few steps.
 
-Clone the project into `~/.vim` directory:
+  1.  Clone the project into `~/.vim` directory:
 
-    git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
+        git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 
-Link to the vimrc fil
+  2.  [Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
 
-[Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
-
-    cd ~/.vim
-    git submodule init
-    git submodule update
+        cd ~/.vim
+        git submodule init
+        git submodule update
 
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
-## Contributing
+## Managing Submodules
 
+
+### Github Gists and Sub-Trees
+
+Sometimes you might want to directly include the sub-tree of a repository.
+Perhaps the file exists as a [Github Gist](https://gist.github.com) or there
+is a Vim script that is part of another a non-Vim package. [Git supports
+working with
+sub-trees.](http://jasonkarns.com/blog/subdirectory-checkouts-with-git-sparse-checkout/)
+
+Here is an example for including Tom Ryder's script that prevents Vim from
+writing files to temporary directories:
+
+  1. Git enables sub-trees through the `sparsecheckout` option. This is only
+     onlly needs to be done once (and already is in this distribution).
+
+        cd ~/.vim
+        git config core.sparsecheckout true
+
+  2. Next, we
+  create a place for our new 'package' that is not really
+     a package.
+
+        cd bundle
+        mkdir noplaintext
+
+  3. We then clone the sub-tree we want into new directory. In this example,
+     we place the sub-tree into a `plugin` directory as that is the best fit.
+     We are also pulling this content as a submodule, consistent with how we
+     are managing other packages.
+
+        cd noplaintext
+        git submodule add https://gist.github.com/tejr/5890634 plugin
+
+  4. Last, we commit changes.  Note, we cannot be in the sub-tree directory
+     when we perform the commit.
+
+        cd ..
+        git commit
+
+Now, Vim will execute the new pseudo package every time we start it.
+
+We will eventually want to update sub-trees. We can either do this one
+sub-tree at a time or all of them at once:
+
+   * `git pull` within a sub-tree to update that sub-tree
+
+   * `git submodule foreach git pull` in the `bundle` directory to update
+       *all* sub-tree
+
+If the pull works smoothly, we do the typical commit dance from the `.vim`
+directory:
+
+      git add bundle/*
+      git commit -m "Updated packges"
+
+## References
+
+Here are places learn more about managing your installation and the packages
+that I have installed:
+
+   * Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
+     blog article contains quite a bit of good advice on how to write a good
+     vimrc file.
+
+  * [VimAwesome](https://vimawesome.com) has a superb interface to Vim
+    plugins.
+
+
+## Contributing
 
 ## References
 
@@ -63,3 +130,5 @@ If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
       * Vimrc setup
 
 *  Git refernces 
+
+## License
