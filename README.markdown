@@ -44,6 +44,8 @@ Clone the project into `~/.vim` directory:
 
     git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 
+Link to the vimrc fil
+
 [Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
 
     cd ~/.vim
@@ -54,3 +56,10 @@ If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
 ## Contributing
 
+
+## References
+
+  * [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
+      * Vimrc setup
+
+*  Git refernces 
