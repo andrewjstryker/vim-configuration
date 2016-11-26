@@ -50,6 +50,11 @@ Installing this project takes a few steps.
         git submodule init
         git submodule update
 
+  3. Update help tags. Pathogen supplies a command to update all the help tag
+     files that Vim uses to locate documentation. Within Vim, type:
+
+        :Helptags
+
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
 ## Managing Submodules
