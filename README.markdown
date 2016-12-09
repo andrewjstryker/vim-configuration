@@ -40,15 +40,14 @@ Does this sound good?  Then let's get started.
 
 Installing this project takes a few steps.
 
-  1.  Clone the project into `~/.vim` directory:
+  1. Clone the project and its [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+     into `~/.vim` directory:
 
-        git clone https://github.com/andrewjstryker/vim-configuration.git ~/.vim
+        git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 
-  2.  [Clone each of the submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+  2. Link to the `vimrc` file:
 
-        cd ~/.vim
-        git submodule init
-        git submodule update
+        ln -s ~/.vim/vimrc ~/.vimrc
 
   3. Update help tags. Pathogen supplies a command to update all the help tag
      files that Vim uses to locate documentation. Within Vim, type:
