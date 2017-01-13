@@ -127,3 +127,6 @@
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json
