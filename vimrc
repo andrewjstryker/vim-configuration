@@ -144,7 +144,7 @@ set visualbell		" screen flash instead of beeps
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
 if has("gui_running")
-  set columns=84        " space for numbers
+  set columns=90        " space for numbers and gutters
   set mouse=a           " enable mouse in all modes
   set lines=50	        " try to get extra lines
 endif
