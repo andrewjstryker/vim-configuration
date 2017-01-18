@@ -166,11 +166,6 @@ endif
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-" Cursor key navigation plugin
-let g:navigate_state = 1
-nmap <silent> <Tab> <Plug>NavigateCycle
-nmap <silent> <S-Tab> <Plug>ReverseNavigateCycle
-
 " timstamp plugin
 let g:timstamp_1='\( Last \([Cc]hanged\|[Mm]odified\):  \=\).*$!' .
             \ '\1%a %b %d %T %Z %Y'
