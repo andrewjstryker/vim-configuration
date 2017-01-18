@@ -115,3 +115,6 @@
 [submodule "bundle/vim-rmarkdown"]
 	path = bundle/vim-rmarkdown
 	url = https://github.com/vim-pandoc/vim-rmarkdown
+[submodule "bundle/DrawIt"]
+	path = bundle/DrawIt
+	url = https://github.com/vim-scripts/DrawIt
