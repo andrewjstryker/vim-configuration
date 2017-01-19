@@ -113,6 +113,8 @@ directory:
       git add bundle/*
       git commit -m "Updated packges"
 
+## Contributing
+
 ## References
 
 Here are places learn more about managing your installation and the packages
@@ -124,11 +126,6 @@ that I have installed:
 
   * [VimAwesome](https://vimawesome.com) has a superb interface to Vim
     plugins.
-
-
-## Contributing
-
-## References
 
   * [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
       * Vimrc setup
