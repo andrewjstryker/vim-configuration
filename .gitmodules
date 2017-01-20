@@ -51,37 +51,37 @@
 	url = https://github.com/vim-voom/vim-voom.github.com.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "bundle/vim-rdoc"]
 	path = bundle/vim-rdoc
-	url = git://github.com/hallison/vim-rdoc.git
+	url = https://github.com/hallison/vim-rdoc.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
+	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/textile.vim"]
 	path = bundle/textile.vim
-	url = git://github.com/timcharper/textile.vim.git
+	url = https://github.com/timcharper/textile.vim.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
+	url = https://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/vim-tmux"]
 	path = bundle/vim-tmux
-	url = git://github.com/tsaleh/vim-tmux.git
+	url = https://github.com/tsaleh/vim-tmux.git
 [submodule "bundle/Gist.vim"]
 	path = bundle/Gist.vim
-	url = git://github.com/vim-scripts/Gist.vim.git
+	url = https://github.com/vim-scripts/Gist.vim.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
@@ -90,7 +90,7 @@
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "bundle/LaTeX-Box"]
 	path = bundle/LaTeX-Box
-	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -132,7 +132,7 @@
 	url = https://github.com/elzr/vim-json
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode
