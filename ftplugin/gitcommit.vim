@@ -7,4 +7,6 @@ let g:gitcommit_config = 1
 
 " use the spell checker if possible
 " TODO: generalize this code
-setlocal spell spell_lang=en_us
+if has("spell")
+  setlocal spell spell_lang=en_us
+endif
