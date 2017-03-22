@@ -228,6 +228,21 @@ if has("autocmd")
                 \ endif
 endif
 
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+"
+" Local settings under version control
+"
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+
+"if exists(runtime/vimrc-local.vim)
+"    runtime vimrc-local.vim
+"endif
+
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+"
+" Security settings
+"
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 set secure		" do not allow ":autocmd" in the current directory's
                         " .vimrc; prevents Trojan Horses; must be last
 
