@@ -79,9 +79,6 @@
 [submodule "bundle/vim-tmux"]
 	path = bundle/vim-tmux
 	url = https://github.com/tsaleh/vim-tmux.git
-[submodule "bundle/Gist.vim"]
-	path = bundle/Gist.vim
-	url = https://github.com/vim-scripts/Gist.vim.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git

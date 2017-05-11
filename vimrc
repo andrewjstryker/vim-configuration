@@ -95,6 +95,8 @@ set formatoptions+=1	" try not to break a line after a one-letter word
 if has("win32") && executable("grep")
     set grepprg=grep	" use grep instead of findstr where possible
 endif
+set guioptions-=T       " no need to have a toolbar
+set guioptions-=m       " I'm not fond of the menu either
 set history=50		" keep 50 lines of command line history
 set hlsearch		" show search results
 set incsearch		" show matching search patterns while typing

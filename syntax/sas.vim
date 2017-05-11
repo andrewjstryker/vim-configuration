@@ -60,7 +60,8 @@ endif
 let s:cpo_save = &cpo
 set cpo&vim
 
-syn case ignore
+syn region sasString	start=+"+  skip=+\\\\\|\\"+  end=+"+
+syn region sasString	start=+'+  skip=+\\\\\|\\"+  end=+'+
 
 " Basic SAS syntaxes
 syn keyword sasOperator and eq ge gt in le lt ne not of or
