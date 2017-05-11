@@ -1,9 +1,9 @@
 " JSON specific settings
 
-if exists("g:json_config")
+if exists("b:json_config")
   finish
 endif
-let g:json_config = 1
+let b:json_config = 1
 
 " have vim-json fold based on syntax
 setlocal foldmethod=syntax

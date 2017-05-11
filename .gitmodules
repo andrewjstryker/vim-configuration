@@ -133,3 +133,9 @@
 [submodule "bundle/vim-navigate"]
 	path = bundle/vim-navigate
 	url = axs@sdf.org:src/vim-navigate
+[submodule "bundle/vim-pandoc"]
+	path = bundle/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc
+[submodule "bundle/vim-pandoc-syntax"]
+	path = bundle/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax
