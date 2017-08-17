@@ -10,3 +10,5 @@ let b:markdown_config = 1
 if has("spell")
   setlocal spell spelllang=en_us
 endif
+
+set formatoptions+=t
