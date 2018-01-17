@@ -11,4 +11,13 @@ if has("spell")
   setlocal spell spelllang=en_us
 endif
 
+" from this style guide: https://github.com/carwin/markdown-styleguide
+
+" wrap at 80 columns
+set textwidth=80
 set formatoptions+=t
+
+" 4 spaces for indent leves
+set shiftwidth=4
+set softtabstop
+set expandtab
