@@ -166,17 +166,6 @@ endif
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-" timstamp plugin
-let g:timstamp_1='\( Last \([Cc]hanged\|[Mm]odified\):  \=\).*$!' .
-            \ '\1%a %b %d %T %Z %Y'
-let g:timstamp_2='\( [Tt]ime[- ]\?[Ss]tamp:  \=\).*$!' .
-            \ '\1<#f %a %Y/%m/%d %H:%M:%S #u #h>'
-let g:timstamp_3='\(Last [Cc]hange:  \=\).*$!\1%Y %B %d'
-let g:timstamp_4='\( Last \([Cc]hanged\|[Mm]odified\):\).*$!' .
-            \ '\1  %a %b %d %T %Z %Y'
-let g:timstamp_5='\(Last [Cc]hange:\).*$!\1  %Y %B %d'
-let g:timstamp_6='\(@version [[:digit:]]\.[[:digit:]]\).*$!\1  %Y %B %d'
-
 " DrawIt
 let g:DrChipTopLvlMenu = "Plugins."
 
