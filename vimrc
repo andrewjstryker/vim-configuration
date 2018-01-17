@@ -156,9 +156,8 @@ endif
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-if &columns > 80
+if &columns > 100
   set number            " show line numbers on the right hand margin
-  set relativenumber    " make the numbers relative to the cursor line
 endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
