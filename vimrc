@@ -1,6 +1,5 @@
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-" File:  .vimrc
-" Last Modified:  Mon Sep 19 20:20:30 PDT 2005
+" File:  vimrc
 " Maintainer:  Andrew Stryker <axs@sdf.org>
 " Description:  Initialization file for the Vim text editor.  This file
 " contains sensitive settings and mappings for more effective text editting.
