@@ -157,3 +157,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/vim-markdown-toc"]
+	path = bundle/vim-markdown-toc
+	url = https://github.com/mzlogin/vim-markdown-toc.git
