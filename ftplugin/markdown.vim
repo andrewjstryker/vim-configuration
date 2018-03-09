@@ -18,6 +18,6 @@ set textwidth=80
 set formatoptions+=t
 
 " 4 spaces for indent leves
-set shiftwidth=4
-set softtabstop
+set shiftwidth=2
+set softtabstop=2
 set expandtab
