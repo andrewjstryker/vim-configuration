@@ -27,7 +27,7 @@ The approach the project takes primarly builds on two tools:
 
 All this project does is:
 
-  1. Maintian sensible `vimrc` file that works across different operating
+  1. Maintain sensible `vimrc` file that works across different operating
      systems
 
   2. Track all external plugins with git submodules
