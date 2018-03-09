@@ -49,10 +49,11 @@ Installing this project takes a few steps.
 
         ln -s ~/.vim/vimrc ~/.vimrc
 
-  3. Update help tags. Pathogen supplies a command to update all the help tag
-     files that Vim uses to locate documentation. Within Vim, type:
+  3. Update help tags. Recent versions of Vim provide the command `:helptags`
+     for this purpose. Use the argument `ALL` to build help tags for all the
+     bundles on the `runtimepath`:
 
-        :Helptags
+        :helptags ALL
 
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
