@@ -72,7 +72,7 @@ Here is an example for including Tom Ryder's script that prevents Vim from
 writing files to temporary directories:
 
   1. Git enables sub-trees through the `sparsecheckout` option. This is only
-     onlly needs to be done once (and already is in this distribution).
+     needs to be done once (and already is in this distribution).
 
         cd ~/.vim
         git config core.sparsecheckout true
