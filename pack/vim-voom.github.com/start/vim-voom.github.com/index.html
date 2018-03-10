@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>VOoM: two-pane text outliner</title>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="VOoM: Vim two-pane outliner.">
+
+<style type="text/css">
+img.screenshot {border-style:solid; border-width:3px;}
+td {vertical-align:top; padding-left:10px}
+tt {font-size:90%; white-space:nowrap;}
+</style>
+</head>
+
+<body>
+
+<p><b>VOoM</b> (<u>V</u>im <u>O</u>utliner <u>o</u>f <u>M</u>arkups) is a plugin for text editor <big><a href="http://www.vim.org/about.php">Vim</a></big> that turns Vim into a two-pane outliner.<br>
+Description and download page: <i><big><a href="http://www.vim.org/scripts/script.php?script_id=2657">http://www.vim.org/scripts/script.php?script_id=2657</a></big></i><br>
+This page is for screenshots.</p>
+<br>
+<hr>
+
+
+<!-- default layout {{{1 -->
+<a name="voomhelp"></a>
+<h2>default outline layout</h2>
+<table><tr>
+<td>
+<a href="pics/voom_voomhelp.png"><img class="screenshot" src="pics/voom_voomhelp_small.gif" alt=""></a>
+</td>
+<td>
+The default outline layout after the command <b><tt>:Voom&nbsp;[markup]</tt></b>. The outline window (Tree buffer) is on the left.<br>
+<br>
+This screenshot shows VOoM help file, "doc/voom.txt", which is written as an outline. It is a standard Vim help file except that it uses non-default <a href="http://vimhelp.appspot.com/options.txt.html#%27foldmarker%27">fold markers</a> set from a modeline at the bottom of the file. The command <b><tt>:Voomhelp</tt></b> opens this help file as an outline in a new tabpage.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- split windows {{{1 -->
+<a name="voomhelp_split"></a>
+<h2>split windows</h2>
+<table><tr>
+<td>
+<a href="pics/voom_voomhelp_split.png"><img class="screenshot" src="pics/voom_voomhelp_split_small.gif" alt=""></a>
+</td>
+<td>
+In this screenshot the Tree buffer (on the right) and the source buffer are each split in two windows to show different parts on the same outline. VOoM Tree buffers (there is one for each source buffer) can be displayed in any number of different windows and tab pages, just like any other Vim buffer. It is also possible to have an entirely different outline view in another tab page.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- animation {{{1 -->
+<a name="animation"></a>
+<h2>moving group of nodes up</h2>
+<table><tr>
+<td>
+<a href="pics/voom_anim.gif"><img class="screenshot" src="pics/voom_anim_small.gif" alt=""></a>
+</td>
+<td>
+This is animated GIF, see full-size image (17 sec, 102 KB).<br>
+<br>
+VOoM can perform all standard outline operations typically found in an outliner program: Insert New Headline, Move nodes Up/Down/Left/Right, Copy/Cut/Paste, Sort in various ways. In addition, outline operations can be applied to <u>a group of sibling nodes</u> in Visual selection.<br>
+<br>
+This animation shows two sibling nodes "AA" and "BB" being moved Up: the two nodes are selected in the Tree buffer using Visual mode and then <tt>Ctrl-Up</tt> is pressed repeatedly (or <tt>^^</tt>, or <tt>&lt;LocalLeader&gt;u</tt>). Note that the outline operation Move Up is automatically applied to subtrees, that is to top level nodes and all their descendants.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- reST {{{1= -->
+<a name="rest"></a>
+<h2>reStructuredText, Markdown, txt2tags, AsciiDoc, Org-mode, wiki, LaTeX, etc.</h2>
+<table><tr>
+<td>
+<a href="pics/voom_rest.png"><img class="screenshot" src="pics/voom_rest_small.gif" alt=""></a>
+</td>
+<td>
+The command<br>
+<b><tt>&nbsp;&nbsp;&nbsp;&nbsp;:Voom&nbsp;rest</tt></b><br>
+creates the outline from <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections">reStructuredText (reST) section titles</a>.
+This screenshot shows the source for <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">reStructuredText specification</a> available <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.txt">here</a>.
+All major outline operations are supported and can be used to rearrange document sections.
+The command line area shows the current node's UNL (Uniform Node Locator) as echoed by the command <b><tt>:Voomunl</tt></b>.
+<br><br>
+
+VOoM was originally written to work with
+<a href="http://vimhelp.appspot.com/fold.txt.html#fold-marker">start fold markers with level numbers</a>,
+which is one of Vim's built-in folding methods and is the most versatile outline markup.
+<br><br>
+
+VOoM can currently handle a variety of markups, including popular
+<a href="https://en.wikipedia.org/wiki/Lightweight_markup_language">lightweight markup languages</a>.
+These markups have headlines (also called headings, headers, section headers, titles) and thus support an outline structure. VOoM can work with headlines in the following formats:
+
+
+<ul>
+<li><a href="http://vimhelp.appspot.com/fold.txt.html#fold-marker">Start fold markers with level numbers</a> (<tt>:Voom</tt>).
+This is the default or "fmr" mode: headlines are lines with {{{1, {{{2, {{{3, etc. Start fold markers are determined by Vim option <a href="http://vimhelp.appspot.com/options.txt.html#%27foldmarker%27">'fmr'</a>. There are also variations of this mode: fmr1, fmr2, fmr3.
+</li>
+
+<li><a href="https://en.wikipedia.org/wiki/Help:Wiki_markup#Sections">MediaWiki</a> (<tt>:Voom&nbsp;wiki</tt>).
+</li>
+
+<li><a href="https://github.com/vimwiki/vimwiki">Vimwiki</a> (<tt>:Voom&nbsp;vimwiki</tt>).
+</li>
+
+<li><a href="https://www.dokuwiki.org/">DokuWiki</a> (<tt>:Voom&nbsp;dokuwiki</tt>).
+</li>
+
+<li><a href="http://www.vim.org/scripts/script.php?script_id=861">Viki/Deplate</a> (<tt>:Voom&nbsp;viki</tt>).
+</li>
+
+<li><a href="http://orgmode.org/">Emacs Org-mode</a> (<tt>:Voom&nbsp;org</tt>).
+</li>
+
+<li><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> (<tt>:Voom&nbsp;rest</tt>).
+</li>
+
+<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a> (<tt>:Voom&nbsp;markdown</tt>).
+Standard Markdown. Both Setext-style and Atx-style headers are supported.
+</li>
+
+<li><a href="http://pandoc.org/">Pandoc Markdown</a> (<tt>:Voom&nbsp;pandoc</tt>).
+This <a href="pics/voom_markdown.png">screenshot</a> shows Pandoc README.
+Headlines inside fenced code blocks are ignored, which makes this mode suitable for MultiMarkdown, GitHub Markdown, Markdown R, etc.
+</li>
+
+<li><a href="http://txt2tags.org/">txt2tags</a> (<tt>:Voom&nbsp;txt2tags</tt>).
+This <a href="pics/voom_txt2tags.png">screenshot</a> shows txt2tags user guide.
+</li>
+
+<li><a href="http://asciidoc.org/">AsciiDoc</a> (<tt>:Voom&nbsp;asciidoc</tt>).
+Both title formats are supported. This <a href="pics/voom_asciidoc.png">screenshot</a> shows AsciiDoc user guide.
+</li>
+
+<li><a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> (<tt>:Voom&nbsp;latex</tt>).
+This <a href="pics/voom_latex.png">screenshot</a> shows <a href="http://www.ctan.org/tex-archive/info/amslatex/primer">amshelp.tex</a>.
+</li>
+
+<li>.dtx files (<tt>:Voom&nbsp;latexDtx</tt>).
+Documented LaTeX sources.
+</li>
+
+<li><a href="https://en.wikipedia.org/wiki/HTML_element#Basic_text">HTML heading tags</a> (<tt>:Voom&nbsp;html</tt>).
+Single lines only.
+</li>
+
+<li><a href="http://www.vim.org/scripts/script.php?script_id=517">The Vim Outliner</a> (<tt>:Voom&nbsp;thevimoutliner</tt>).
+</li>
+
+<li><a href="https://github.com/vimoutliner/vimoutliner">VimOutliner</a> (<tt>:Voom&nbsp;vimoutliner</tt>).
+</li>
+
+<li><a href="http://www.vim.org/scripts/script.php?script_id=2027">TaskPaper</a> (<tt>:Voom&nbsp;taskpaper</tt>).
+</li>
+
+<li><a href="https://www.python.org/">Python</a> code (<tt>:Voom&nbsp;python</tt>).
+Like a class browser, but regions between "class" and "def" are also nodes.
+</li>
+
+<li>Paragraphs (<tt>:Voom&nbsp;paragraph{Blank|Indent|NoIndent}</tt>). Blocks of lines. Handy for sorting paragraphs with :VoomSort.
+</li>
+
+<li>Miscellaneous other formats, see help file.
+</li>
+
+</ul>
+
+<a name="faq_1"></a>
+<p style="border-style:solid; border-width:1px; padding:10px;">
+<b>NOTE:</b> By default, the command "<b><tt>:Voom</tt></b>" is equivalent to "<b><tt>:Voom&nbsp;fmr</tt></b>"&mdash;outline is created from lines with {{{1, {{{2, {{{3, etc. The marker is specified by Vim option
+<a href="http://vimhelp.appspot.com/options.txt.html#%27foldmarker%27">'fmr'</a>.
+To outline another format, an argument specifying the desired markup mode must be provided.<br>
+For standard Markdown format:<br>
+<b><tt>&nbsp;&nbsp;&nbsp;&nbsp;:Voom&nbsp;markdown</tt></b><br>
+For Pandoc Markdown:<br>
+<b><tt>&nbsp;&nbsp;&nbsp;&nbsp;:Voom&nbsp;pandoc</tt></b><br>
+For LaTeX file:<br>
+<b><tt>&nbsp;&nbsp;&nbsp;&nbsp;:Voom&nbsp;latex</tt></b><br>
+And so on. There is argument completion: type <tt>":Voom&nbsp;"</tt> and press <tt>&lt;Tab&gt;</tt> or <tt>&lt;C-d&gt;</tt>.<br>
+See also help for g:voom_ft_modes and g:voom_default_mode.
+</p>
+
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- PyLog buffer {{{1 -->
+<a name="pylog"></a>
+<h2>Python Log buffer</h2>
+<table><tr>
+<td>
+<a href="pics/voom_pylog.png"><img class="screenshot" src="pics/voom_pylog_small.gif" alt=""></a>
+</td>
+<td>
+The Python Log buffer, <tt>__PyLog__</tt>, is created by the command <b><tt>:Voomlog</tt></b>. When present, Python's <tt>sys.stdout</tt> and <tt>sys.stderr</tt> are appended to it instead of printed on Vim command line.<br>
+<br>
+The __PyLog__ buffer is modeled after the log pane of <a href="http://leoeditor.com/">Leo outlining editor</a>. The Vim tab page in the screenshot emulates the default layout of Leo panes: the tree pane (top left), the log pane (top right), the body pane (below).
+<br>
+<br>
+Several other VOoM features were inspired by Leo:<br>
+<ul>
+<li>The <b><tt>:Voomexec</tt></b> command is like Leo's <a href="http://leoeditor.com/commands.html#executing-python-scripts-in-body-text">Execute Script</a> command when executed in a node which contains the @others directive. Currently, Vim and Python scripts can be executed this way. (A Python file with code snippets organized via fold markers, plus the command :Voomexec, plus the PyLog buffer is an alternative to running Python's interactive interpreter.)<br><br></li>
+
+<li>Outline operations <b><tt>Mark/Unmark</tt></b> (when working with fold markers) are modeled after <a href="http://leoeditor.com/commands.html#marking-nodes">similar Leo commands</a>.<br><br></li>
+
+<li>VOoM can save which nodes in the Tree are expanded/contracted and which node is the selected node (when working with fold markers). The difference from Leo is that this is done manually via Tree-local commands and mappings (<tt>:[range]VoomFoldingSave</tt>, <tt>:[range]VoomFoldingRestore</tt>).</li>
+</ul>
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- Voomgrep {{{1 -->
+<a name="voomgrep"></a>
+<h2>Voomgrep and Voomunl</h2>
+<table><tr>
+<td>
+<a href="pics/voom_voomgrep.png"><img class="screenshot" src="pics/voom_voomgrep_small.gif" alt=""></a>
+</td>
+<td>
+The command line area shows output of the command <b><tt>:Voomunl</tt></b>.<br>
+It is UNL (Uniform Node Locator) of node under the cursor. The term is from <a href="http://leoeditor.com/plugins.html#unl-py">Leo UNL.py plugin</a>. An UNL is like a path to the node. It lists headlines of all ancestor nodes.<br>
+<br>
+The Quickfix window shows output of the command <b><tt>:Voomgrep</tt></b>.<br>
+It is like <tt>:vimgrep</tt> followed by <tt>:copen</tt>, but instead of showing matching lines it shows matching nodes and their UNLs. In this Vim script file, nodes are mostly functions. So, executing<br>
+<b><tt>:Voomgrep some_name</tt></b><br>
+produces a list of functions in which &quot;some_name&quot; is used.<br>
+<br>
+The command <b><tt>:Voomgrep</tt></b> can also perform boolean AND/NOT searches and hierarchical searches (<a href="http://orgmode.org/org.html#Tag-inheritance">tag inheritance</a>).
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- bookmarks, notes organizer {{{1 -->
+<a name="organizer"></a>
+<h2>bookmarks, notes organizer</h2>
+<table><tr>
+<td>
+<a href="pics/voom_bookmarks.png"><img class="screenshot" src="pics/voom_bookmarks_small.gif" alt=""></a>
+</td>
+<td>
+A two-pane text outliner makes an excellent organizer of bookmarks and various notes.
+<br>
+<br>
+Vim can be configured to highlight URL links (http://..., ftp://..., file:///...) and to launch them with mouse clicks or other keys. Several Vim plugins show how to do that, e.g.,
+<a href="http://www.vim.org/scripts/script.php?script_id=1075">netrw</a>'s gx command,
+<a href="http://www.vim.org/scripts/script.php?script_id=293">utl.vim</a>.
+<br>
+<br>
+The command <b><tt>:Voomgrep</tt></b> is handy for finding data in a large, database-like outline, especially when there is a tagging system.
+<br>
+<br>
+Since VOoM is not a "filetype" plugin, it should be compatible with almost any plain text note-taking format.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- terminal {{{1 -->
+<a name="terminal"></a>
+<h2>terminal Vim</h2>
+<table><tr>
+<td>
+<a href="pics/voom_console.png"><img class="screenshot" src="pics/voom_console_small.gif" alt=""></a>
+</td>
+<td>
+VOoM Tree buffer and __PyLog__ buffer in console Vim on Windows. VOoM works with terminal Vim just as well as with GUI Vim. It should even be usable when 'compatible' is set.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- Linux {{{1 -->
+<a name="linux"></a>
+<h2>Linux</h2>
+<table><tr>
+<td>
+<a href="pics/voom_linux1.png"><img class="screenshot" src="pics/voom_linux1_small.gif" alt=""></a>
+</td>
+<td>
+Linux, GUI Vim. Shown are $VIMRUNTIME/autoload/netrw.vim, its outline, the __PyLog__ buffer. Another Linux screenshot is <a href="pics/voom_markdown.png">here</a>.<br>
+<br>
+The VOoM plugin is cross-platform. It should work on any system with Python 2 or 3 and vim/gvim compiled with the <a href="http://vimhelp.appspot.com/if_pyth.txt.html#if_pyth.txt">Python interface</a>.
+</td>
+</tr></table>
+<br><br>
+<hr>
+
+
+
+<!-- the end {{{1 -->
+<div style="text-align:center">
+<p><i>This website is on GitHub: <a href="https://github.com/vim-voom/vim-voom.github.com">github.com/vim-voom</a></i></p>
+</div>
+
+</body>
+</html>
