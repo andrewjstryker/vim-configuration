@@ -86,10 +86,10 @@ git add TAGS pack/vim-example/start/vim-example
 
 ## Contributing
 
-I am happy to accept contributions to this project, particularily if they
+I am happy to accept contributions to this project, particularity if they
 advance my [future plans](#future-plans). File issues and merge requests on
 GitHub. I'm busy, so please don't be surprised if I don't respond immediately.
-Send me an email or Twiter DM only after a couple weeks of nonresponse.
+Send me an email or Twitter DM only after a couple weeks of non response.
 
 There are a couple of things that you can if you want be to accept changes:
 
