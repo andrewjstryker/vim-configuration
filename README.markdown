@@ -1,136 +1,123 @@
 # Vim Configuration
 
-**Warning**: this is a work in progress and quite likely not working yet.
+Maintaining a consistent Vim environment across several machines can be a bit of
+a pain. That's mostly due to trying to keep third-party plugins and packages in
+sync. This project shows how to synchronize a complex configuration using:
 
-I maintain Vim configuration files across several machines.  Since I use more
-than a few plugins, this can be a bit cumbersome.  You can view this project
-as my notes on synchronizing Vim configuration.
+* Native Vim package management. Beginning in version 8, Vim supports a package
+  management that is conceptually similar to Tim Pope's excellent
+  [Pathogen](https://github.com/tpope/vim-pathogen).
+
+* [Git submodules](https://git-scm.com/docs/git-submodule). Git supports
+  managing external dependencies that are also git repositories. That is exactly
+  how we treat each of the plugins. We want to manage which version of a plugin
+  we are using. We otherwise don't care about the development path of a plugin.
 
 A different perspective is that this project is sort-of a Vim plugin
 distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
 and have a 'batteries included' Vim, complete with popular plugins for general
 purpose text editing.
 
-The approach the project takes primarly builds on two tools:
+<!-- vim-markdown-toc GFM -->
 
-  * [Pathogen](https://github.com/tpope/vim-pathogen): Tim Pope's excellent
-    and light-weight package management system.  Pathogen is *not* really
-    a package manager.  Pathogen is a library for manipulating the
-    `'runtimepath'`.  Once you have that, pathogen just stands out of the
-    way and let git manage packages.
+* [Installation](#installation)
+* [Managing Plugins and Packages](#managing-plugins-and-packages)
+* [Managing Submodules](#managing-submodules)
+* [Future Plans](#future-plans)
+* [Contributing](#contributing)
+* [References](#references)
+* [License](#license)
 
-  * [Git submodules](https://git-scm.com/docs/git-submodule): the
-    functionality within git to manage external dependencies.  That is
-    exactly how we treat each of the plugins.  We want to manage which
-    version of a plugin we are using. We otherwise don't care about the
-    development path of a plugin.
-
-All this project does is:
-
-  1. Maintain sensible `vimrc` file that works across different operating
-     systems
-
-  2. Track all external plugins with git submodules
-
-  3. Provide documentation and a few helper utilities
-
-Does this sound good?  Then let's get started.
+<!-- vim-markdown-toc -->
 
 ## Installation
 
-Installing this project takes a few steps.
+To install, you need to clone this repository and its
+[submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
+into your `~/.vim` directory:
 
-  1. Clone the project and its [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules)
-     into `~/.vim` directory:
+```sh
+git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
+```
 
-        git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
+Next, link to the `vimrc` file, after backing-up your own `vimrc`:
 
-  2. Link to the `vimrc` file:
+```sh
+mv ~/.vimrc ~/.vimrc.bak
+ln -s ~/.vim/vimrc ~/.vimrc
+```
 
-        ln -s ~/.vim/vimrc ~/.vimrc
+If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles` and
+then change `.vimrc` to `_vimrc`.
 
-  3. Update help tags. Recent versions of Vim provide the command `:helptags`
-     for this purpose. Use the argument `ALL` to build help tags for all the
-     bundles on the `runtimepath`:
+## Managing Plugins and Packages
 
-        :helptags ALL
+Most of the scripts on the [Vim website](https://www.vim.org/scripts) are
+*plugins*. To add a new plugin:
 
-If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
+1. Clone the repository to `~/.vim/pack/<respository-name>start`. For example:
+
+```sh
+mkdir -p ~/.vim/pack/vim-example/start
+cd ~/.vim/pack/vim-example/start
+git clone https://example.com/example/vim-example ~/.vim/pack/vim-example/start
+```
+
+2. Update help tags. The `:helptags` command with the `ALL` argument scans all
+   the files in the `runtimepath` and builds a new index file. Within `vim`,
+   type:
+
+```viml
+:helptags ALL
+```
+
+3. Add the changes into the `git` index.
+
+```sh
+cd ~/.vim
+git add TAGS pack/vim-example/start/vim-example
+```
 
 ## Managing Submodules
 
 
-### Github Gists and Sub-Trees
 
-Sometimes you might want to directly include the sub-tree of a repository.
-Perhaps the file exists as a [Github Gist](https://gist.github.com) or there
-is a Vim script that is part of another a non-Vim package. [Git supports
-working with
-sub-trees.](http://jasonkarns.com/blog/subdirectory-checkouts-with-git-sparse-checkout/)
-
-Here is an example for including Tom Ryder's script that prevents Vim from
-writing files to temporary directories:
-
-  1. Git enables sub-trees through the `sparsecheckout` option. This is only
-     needs to be done once (and already is in this distribution).
-
-        cd ~/.vim
-        git config core.sparsecheckout true
-
-  2. Next, we
-  create a place for our new 'package' that is not really
-     a package.
-
-        cd bundle
-        mkdir noplaintext
-
-  3. We then clone the sub-tree we want into new directory. In this example,
-     we place the sub-tree into a `plugin` directory as that is the best fit.
-     We are also pulling this content as a submodule, consistent with how we
-     are managing other packages.
-
-        cd noplaintext
-        git submodule add https://gist.github.com/tejr/5890634 plugin
-
-  4. Last, we commit changes.  Note, we cannot be in the sub-tree directory
-     when we perform the commit.
-
-        cd ..
-        git commit
-
-Now, Vim will execute the new pseudo package every time we start it.
-
-We will eventually want to update sub-trees. We can either do this one
-sub-tree at a time or all of them at once:
-
-   * `git pull` within a sub-tree to update that sub-tree
-
-   * `git submodule foreach git pull` in the `bundle` directory to update
-       *all* sub-tree
-
-If the pull works smoothly, we do the typical commit dance from the `.vim`
-directory:
-
-      git add bundle/*
-      git commit -m "Updated packges"
+## Future Plans
 
 ## Contributing
 
+I am happy to accept contributions to this project, particularily if they
+advance my [future plans](#future-plans). File issues and merge requests on
+GitHub. I'm busy, so please don't be surprised if I don't respond immediately.
+Send me an email or Twiter DM only after a couple weeks of nonresponse.
+
+There are a couple of things that you can if you want be to accept changes:
+
+- File issues on GitHub. There's no need to send me an email or Twitter DM.
+  Let's use an issue tracking tool to track issues.
+
+- Write [good commit
+  messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+  and submit merge 
+
+Changes 
+
 ## References
 
-Here are places learn more about managing your installation and the packages
-that I have installed:
+Here are a few places to learn more about Vim scripting, plugins/packages, and Git:
 
-   * Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
-     blog article contains quite a bit of good advice on how to write a good
-     vimrc file.
+- Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html) blog
+  article contains quite a bit of good advice on how to write a good vimrc file.
 
-  * [VimAwesome](https://vimawesome.com) has a superb interface to Vim
-    plugins.
+- [VimAwesome](https://vimawesome.com) has a superb interface to Vim plugins.
 
-  * [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
-      * Vimrc setup
+- [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
 
-*  Git refernces 
+- [Vim: So long Pathogen, hello native package
+  loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
+  package management system works. The explanation is not as terse as the
+  documentation that's found via `:help packages`.
+
+*  Git reference
 
 ## License
