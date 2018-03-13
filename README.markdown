@@ -91,14 +91,17 @@ advance my [future plans](#future-plans). File issues and merge requests on
 GitHub. I'm busy, so please don't be surprised if I don't respond immediately.
 Send me an email or Twitter DM only after a couple weeks of non response.
 
-There are a couple of things that you can if you want be to accept changes:
+There are a couple of things that you can do make collaboration easier:
 
 - File issues on GitHub. There's no need to send me an email or Twitter DM.
-  Let's use an issue tracking tool to track issues.
+  Let's use an issue tracking tool to track issues. If you would me to
+  incorporate a new feature, please check with me first. Let's be on the same
+  page *prior* to you writing a bunch of code that I don't want.
 
 - Write [good commit
   messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-  and submit merge 
+  when submitting merge requests. I don't have much time to decipher the fixes
+  or features that you are proposing. So let's agree to communicate clearly.
 
 Changes 
 
