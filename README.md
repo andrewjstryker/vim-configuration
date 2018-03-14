@@ -121,6 +121,20 @@ git submodule update --recursive --remote
 
 ## Future Plans
 
+Here are things I intend to do, with higher priority items towards the top:
+
+- [ ] Make an "essential" branch to hold configuration files and very few
+  packages. This branch would target people working on configuration files.
+  These people want a powerful text editing environment, but don't need
+  specialized plugins.
+
+- [ ] Split `vimrc` into focused files. Currently, the file is too large to
+  quickly located settings. Some settings, like the `j` -> `gj` mapping, should
+  be in their own plugin.
+
+- [ ] List and describe the included plugins. This would help new users learn
+  about the functionality in this distribution.
+
 ## Contributing
 
 I am happy to accept contributions to this project, particularity if they
