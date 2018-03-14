@@ -154,8 +154,6 @@ There are a couple of things that you can do make collaboration easier:
   when submitting merge requests. I don't have much time to decipher the fixes
   or features that you are proposing. So let's agree to communicate clearly.
 
-Changes 
-
 ## References
 
 Here are a few places to learn more about Vim scripting, plugins/packages, and Git:
