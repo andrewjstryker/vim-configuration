@@ -27,6 +27,7 @@ purpose text editing.
   * [Updating plugins or packages](#updating-plugins-or-packages)
 * [Future Plans](#future-plans)
 * [Contributing](#contributing)
+* [Contacting the Maintainer](#contacting-the-maintainer)
 * [References](#references)
 * [License](#license)
 
@@ -153,6 +154,16 @@ There are a couple of things that you can do make collaboration easier:
   messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
   when submitting merge requests. I don't have much time to decipher the fixes
   or features that you are proposing. So let's agree to communicate clearly.
+
+## Contacting the Maintainer
+
+There are a few ways to get in touch with me:
+
+- File issues on GitHub as suggested in the [previous section](#contributing)
+
+- Send an email to axs @ sdf.org.
+
+- Send a direct message to me on Twitter @andrewjstryker
 
 ## References
 
