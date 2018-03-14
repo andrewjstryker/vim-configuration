@@ -22,7 +22,6 @@ purpose text editing.
 
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
-* [Managing Submodules](#managing-submodules)
 * [Future Plans](#future-plans)
 * [Contributing](#contributing)
 * [References](#references)
@@ -53,7 +52,7 @@ then change `.vimrc` to `_vimrc`.
 ## Managing Plugins and Packages
 
 Most of the scripts on the [Vim website](https://www.vim.org/scripts) are
-*plugins*. To add a new plugin:
+plugins. To add a new plugin:
 
 1. Clone the repository to `~/.vim/pack/<respository-name>start`. For example:
 
@@ -77,8 +76,6 @@ git clone https://example.com/example/vim-example ~/.vim/pack/vim-example/start
 cd ~/.vim
 git add TAGS pack/vim-example/start/vim-example
 ```
-
-## Managing Submodules
 
 
 
