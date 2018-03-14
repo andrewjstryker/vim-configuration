@@ -22,6 +22,9 @@ purpose text editing.
 
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
+  * [Adding plugins](#adding-plugins)
+  * [Adding packages](#adding-packages)
+  * [Updating plugins or packages](#updating-plugins-or-packages)
 * [Future Plans](#future-plans)
 * [Contributing](#contributing)
 * [References](#references)
@@ -51,6 +54,8 @@ then change `.vimrc` to `_vimrc`.
 
 ## Managing Plugins and Packages
 
+### Adding plugins
+
 Most of the scripts on the [Vim website](https://www.vim.org/scripts) are
 plugins. To add a new plugin:
 
@@ -59,7 +64,7 @@ plugins. To add a new plugin:
 ```sh
 mkdir -p ~/.vim/pack/vim-example/start
 cd ~/.vim/pack/vim-example/start
-git clone https://example.com/example/vim-example ~/.vim/pack/vim-example/start
+git clone https://example.com/example/vim-example
 ```
 
 2. Update help tags. The `:helptags` command with the `ALL` argument scans all
@@ -77,7 +82,42 @@ cd ~/.vim
 git add TAGS pack/vim-example/start/vim-example
 ```
 
+4. Commit the changes to the repository.
 
+```sh
+git commit -m "Add vim-example plugin"
+```
+
+### Adding packages
+
+Native Vim packages have `start` and `opt` directories, so there is not a need
+to make new directories. Replace the first step with:
+
+```sh
+cd ~/.vim/pack
+git clone https://example.com/example/vim-example
+```
+
+From here, follow the steps in the [previous section](#adding-plugins).
+
+### Updating plugins or packages
+
+To update an individual plugin or package, use the normal Git command to pull
+the latest version:
+
+```sh
+cd ~/.vim/pack/vim-example/start/vim-example
+git pull
+```
+
+Beginning with version 1.8.2, Git provides a subcommand to update all submodules
+in a repository. To update all plugins and packages (which are really
+submodules), type:
+
+```sh
+cd ~/.vim
+git submodule update --recursive --remote
+```
 
 ## Future Plans
 
@@ -118,6 +158,9 @@ Here are a few places to learn more about Vim scripting, plugins/packages, and G
   package management system works. The explanation is not as terse as the
   documentation that's found via `:help packages`.
 
-*  Git reference
+* [Git Pro](https://git-scm.com/book/en/v2) is the Git reference on the Git
+  homepage. The chapter on
+  [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) is
+  particularly helpful.
 
 ## License
