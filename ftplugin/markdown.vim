@@ -11,13 +11,13 @@ if has("spell")
   setlocal spell spelllang=en_us
 endif
 
-" from this style guide: https://github.com/carwin/markdown-styleguide
+" tell vim-pandoc to detect hard or soft wraps
+let g:pandoc#formatting#mode='ha'
 
 " wrap at 80 columns
 set textwidth=80
 set formatoptions+=t
 
-" 4 spaces for indent leves
 set shiftwidth=2
 set softtabstop=2
 set expandtab
