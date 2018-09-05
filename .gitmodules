@@ -160,3 +160,6 @@
 [submodule "bundle/vim-markdown-toc"]
 	path = bundle/vim-markdown-toc
 	url = https://github.com/mzlogin/vim-markdown-toc.git
+[submodule "bundle/vim-redact-pass"]
+	path = bundle/vim-redact-pass
+	url = https://sanctum.geek.nz/code/vim-redact-pass.git
