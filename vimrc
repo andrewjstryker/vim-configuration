@@ -64,7 +64,9 @@ endif
 set cursorline          " highlight current line
 set display+=lastline   " show as much of the last line as possible
 set noexrc              " do not read .vimrc and friends in current directory
-set foldlevelstart=99	" begin editting files with all folds open
+if has("folding")
+  set foldlevelstart=99	" begin editting files with all folds open
+endif
 set formatoptions-=t	" do not autowrap all text automatically
 set formatoptions+=c	" autowrap in comments, inserting leader
 set formatoptions-=r	" do not continue comments after <Enter>
