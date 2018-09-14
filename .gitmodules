@@ -43,3 +43,6 @@
 [submodule "pack/vim-json/start/vim-json"]
 	path = pack/vim-json/start/vim-json
 	url = https://github.com/elzr/vim-json.git
+[submodule "pack/vim-jdaddy/start/vim-jdaddy"]
+	path = pack/vim-jdaddy/start/vim-jdaddy
+	url = https://github.com/tpope/vim-jdaddy.git
