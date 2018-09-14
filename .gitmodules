@@ -1,3 +1,6 @@
 [submodule "pack/vim-sensible/start/vim-sensible"]
 	path = pack/vim-sensible/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "pack/python-mode/start/python-mode"]
+	path = pack/python-mode/start/python-mode
+	url = https://github.com/python-mode/python-mode.git
