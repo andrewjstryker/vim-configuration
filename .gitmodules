@@ -13,3 +13,6 @@
 [submodule "pack/LaTeX-Box/start/LaTeX-Box"]
 	path = pack/LaTeX-Box/start/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "pack/csv.vim/start/csv.vim"]
+	path = pack/csv.vim/start/csv.vim
+	url = https://github.com/chrisbra/csv.vim.git
