@@ -28,3 +28,6 @@
 [submodule "pack/vim-arline/start/vim-airline"]
 	path = pack/vim-arline/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/vim-scala/start/vim-scala"]
+	path = pack/vim-scala/start/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
