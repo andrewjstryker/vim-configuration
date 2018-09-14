@@ -46,3 +46,6 @@
 [submodule "pack/vim-jdaddy/start/vim-jdaddy"]
 	path = pack/vim-jdaddy/start/vim-jdaddy
 	url = https://github.com/tpope/vim-jdaddy.git
+[submodule "pack/supertab/start/supertab"]
+	path = pack/supertab/start/supertab
+	url = https://github.com/ervandew/supertab.git
