@@ -25,3 +25,6 @@
 [submodule "pack/vim-ledger/start/vim/ledger"]
 	path = pack/vim-ledger/start/vim/ledger
 	url = https://github.com/ledger/vim-ledger.git
+[submodule "pack/vim-arline/start/vim-airline"]
+	path = pack/vim-arline/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
