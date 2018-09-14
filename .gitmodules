@@ -4,3 +4,6 @@
 [submodule "pack/python-mode/start/python-mode"]
 	path = pack/python-mode/start/python-mode
 	url = https://github.com/python-mode/python-mode.git
+[submodule "pack/NrrwRgn/start/NrrwRgn"]
+	path = pack/NrrwRgn/start/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
