@@ -49,3 +49,6 @@
 [submodule "pack/supertab/start/supertab"]
 	path = pack/supertab/start/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "pack/vim-rmarkdown/start/vim-markdown"]
+	path = pack/vim-rmarkdown/start/vim-markdown
+	url = https://github.com/vim-pandoc/vim-rmarkdown.git
