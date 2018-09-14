@@ -7,3 +7,6 @@
 [submodule "pack/NrrwRgn/start/NrrwRgn"]
 	path = pack/NrrwRgn/start/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
+[submodule "pack/Nvim-R/start/Nvim-R"]
+	path = pack/Nvim-R/start/Nvim-R
+	url = https://github.com/jalvesaq/Nvim-R.git
