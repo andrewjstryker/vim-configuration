@@ -34,3 +34,6 @@
 [submodule "pack/vim-easymotion/start/vim-easymotion"]
 	path = pack/vim-easymotion/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "pack/tabular/start/tabular"]
+	path = pack/tabular/start/tabular
+	url = https://github.com/godlygeek/tabular.git
