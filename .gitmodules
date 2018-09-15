@@ -67,3 +67,6 @@
 [submodule "pack/vim-taskwarrior/start/vim-taskwarrior"]
 	path = pack/vim-taskwarrior/start/vim-taskwarrior
 	url = https://github.com/blindFS/vim-taskwarrior.git
+[submodule "pack/vim-surround/start/vim-surround"]
+	path = pack/vim-surround/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
