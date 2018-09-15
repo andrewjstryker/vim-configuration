@@ -64,3 +64,6 @@
 [submodule "pack/vim-redact-pass/start/vim-redact-pass"]
 	path = pack/vim-redact-pass/start/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
+[submodule "pack/vim-taskwarrior/start/vim-taskwarrior"]
+	path = pack/vim-taskwarrior/start/vim-taskwarrior
+	url = https://github.com/blindFS/vim-taskwarrior.git
