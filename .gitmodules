@@ -79,3 +79,6 @@
 [submodule "pack/vim-gnupg/start/vim-gnupg"]
 	path = pack/vim-gnupg/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "pack/vim-gitgutter/start/vim-gitgutter"]
+	path = pack/vim-gitgutter/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
