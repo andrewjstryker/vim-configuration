@@ -85,3 +85,6 @@
 [submodule "pack/vim-indent-guides/start/vim-indent-guides"]
 	path = pack/vim-indent-guides/start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "pack/vim-markdown-toc/start/vim-markdown-toc"]
+	path = pack/vim-markdown-toc/start/vim-markdown-toc
+	url = https://github.com/mzlogin/vim-markdown-toc.git
