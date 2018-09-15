@@ -64,3 +64,6 @@
 [submodule "bundle/vim-redact-pass"]
 	path = bundle/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
+[submodule "pack/vim-redact-pass/start/vim-redact-pass"]
+	path = pack/vim-redact-pass/start/vim-redact-pass
+	url = https://sanctum.geek.nz/code/vim-redact-pass.git
