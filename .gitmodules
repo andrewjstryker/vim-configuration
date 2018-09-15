@@ -73,3 +73,6 @@
 [submodule "pack/vim-colors-solarized/start/vim-colors-soloarized"]
 	path = pack/vim-colors-solarized/start/vim-colors-soloarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/vim-dispatch/start/vim-dispatch"]
+	path = pack/vim-dispatch/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
