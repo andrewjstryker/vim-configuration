@@ -76,3 +76,6 @@
 [submodule "pack/vim-dispatch/start/vim-dispatch"]
 	path = pack/vim-dispatch/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule "pack/vim-gnupg/start/vim-gnupg"]
+	path = pack/vim-gnupg/start/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
