@@ -61,9 +61,6 @@
 [submodule "pack/vim-pandoc-after/after/vim-pandoc-after"]
 	path = pack/vim-pandoc-after/after/vim-pandoc-after
 	url = https://github.com/vim-pandoc/vim-pandoc-after.git
-[submodule "bundle/vim-redact-pass"]
-	path = bundle/vim-redact-pass
-	url = https://sanctum.geek.nz/code/vim-redact-pass.git
 [submodule "pack/vim-redact-pass/start/vim-redact-pass"]
 	path = pack/vim-redact-pass/start/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
