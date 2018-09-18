@@ -50,9 +50,6 @@ mv ~/.vimrc ~/.vimrc.bak
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles` and
-then change `.vimrc` to `_vimrc`.
-
 ## Managing Plugins and Packages
 
 ### Adding plugins
