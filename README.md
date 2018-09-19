@@ -46,12 +46,12 @@ This project includes numerous packages as submodules.
 ### Interface
 
 - **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
-  [the best color scheme 
+  [the best color scheme
   ever](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
-- **[vim-stay](https://github.com/zhimsel/vim-stay)**: adds automated view
-  session creation and restoration whenever editing a buffer, across Vim 
-  sessions and window life cycles.
+- **[vim-stay](https://github.com/zhimsel/vim-stay)**: automated view session
+  creation and restoration whenever editing a buffer, across Vim sessions and
+  window life cycles.
 
 ### Structured Text documents
 
