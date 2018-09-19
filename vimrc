@@ -40,11 +40,7 @@
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 set nocompatible	" use Vim settings, not standard Vi (must be first)
-set autoindent		" automatically indent
 set autowrite		" when changing buffers, automatically save first
-set backspace=indent	" allow backspacing over indentation,
-set backspace+=eol	" end of line,
-set backspace+=start	" and start of insertion
 set backup		" keep a backup (filename~) file
 set backupdir=./.backup	" use ./.backup directory if present,
 set backupdir+=.	" otherwise use current directory
@@ -86,7 +82,6 @@ set guioptions-=T       " no need to have a toolbar
 set guioptions-=m       " I'm not fond of the menu either
 set history=50		" keep 50 lines of command line history
 set hlsearch		" show search results
-set incsearch		" show matching search patterns while typing
 set modelines=15        " lines checked for set commands (big for timstamp)
 set nolinebreak		" do not break words when wrapping text
 set nolist		" do not show listchars by default
@@ -97,7 +92,6 @@ set mousehide		" hide the mouse pointer while typing (gui only)
 set mousemodel=extend	" right button extends selection, middle pastes
 set nrformats-=octal    " don't use octal numbers with 
 set printoptions+=syntax:off,paper:letter	" options for hardcopy
-set ruler		" show the cursor position all the time
 set selectmode=mouse	" use mouse to start text selection
 set shiftround		" round to the nearest shiftwidth ("<" and ">")
 set shellslash          " use forward slash to expand file name
