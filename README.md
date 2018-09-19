@@ -18,6 +18,8 @@ distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
 and have a 'batteries included' Vim, complete with popular plugins for general
 purpose text editing.
 
+## Table of Contents
+
 <!-- vim-markdown-toc GFM -->
 
 * [Included Packages](#included-packages)
