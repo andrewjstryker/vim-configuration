@@ -88,3 +88,6 @@
 [submodule "pack/vim-markdown-toc/start/vim-markdown-toc"]
 	path = pack/vim-markdown-toc/start/vim-markdown-toc
 	url = https://github.com/mzlogin/vim-markdown-toc.git
+[submodule "pack/denite.vim/start/denite.vim"]
+	path = pack/denite.nvim/start/denite.nvim
+	url = https://github.com/Shougo/denite.nvim.git
