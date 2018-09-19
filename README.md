@@ -20,6 +20,10 @@ purpose text editing.
 
 <!-- vim-markdown-toc GFM -->
 
+* [Included Packages](#included-packages)
+  * [Structured Text documents](#structured-text-documents)
+  * [Appearance](#appearance)
+  * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
   * [Adding plugins](#adding-plugins)
@@ -32,6 +36,30 @@ purpose text editing.
 * [License](#license)
 
 <!-- vim-markdown-toc -->
+
+## Included Packages
+
+This project includes numerous packages as submodules.
+
+### Structured Text documents
+
+These plugins extend Vim's built-in functionality:
+
+- **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
+  keywords versus values, uses Vim's conceal to hide JSON functionality.
+
+- **vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
+  to work with JSON files.
+
+- **vim-markdown**
+
+- **vim-markdown-toc**
+
+### Appearance
+
+- **vim-solarized**
+
+### Vim utilities
 
 ## Installation
 
