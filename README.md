@@ -60,6 +60,9 @@ These plugins extend Vim's built-in functionality:
 - **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
   table of contents for Markdown files.
 
+- **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
+  character delimited files
+
 ### Appearance
 
 - **vim-solarized**
