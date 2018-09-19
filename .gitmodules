@@ -70,6 +70,24 @@
 [submodule "pack/vim-surround/start/vim-surround"]
 	path = pack/vim-surround/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/vim-colors-solarized/start/vim-colors-soloarized"]
+	path = pack/vim-colors-solarized/start/vim-colors-soloarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/vim-dispatch/start/vim-dispatch"]
+	path = pack/vim-dispatch/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "pack/vim-gnupg/start/vim-gnupg"]
+	path = pack/vim-gnupg/start/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "pack/vim-gitgutter/start/vim-gitgutter"]
+	path = pack/vim-gitgutter/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "pack/vim-indent-guides/start/vim-indent-guides"]
+	path = pack/vim-indent-guides/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "pack/vim-markdown-toc/start/vim-markdown-toc"]
+	path = pack/vim-markdown-toc/start/vim-markdown-toc
+	url = https://github.com/mzlogin/vim-markdown-toc.git
 [submodule "pack/denite.vim/start/denite.vim"]
 	path = pack/denite.nvim/start/denite.nvim
 	url = https://github.com/Shougo/denite.nvim.git
