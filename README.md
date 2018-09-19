@@ -48,7 +48,7 @@ These plugins extend Vim's built-in functionality:
 - **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
   keywords versus values, uses Vim's conceal to hide JSON functionality.
 
-- **vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
+- **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
   to work with JSON files.
 
 - **vim-markdown**
