@@ -51,9 +51,12 @@ These plugins extend Vim's built-in functionality:
 - **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
   to work with JSON files.
 
-- **vim-markdown**
+- **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
+  highlighting, matching rules and mappings for [the original
+  Markdown](http://daringfireball.net/projects/markdown/) and extensions.
 
-- **vim-markdown-toc**
+- **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
+  table of contents for Markdown files.
 
 ### Appearance
 
