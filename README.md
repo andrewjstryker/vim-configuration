@@ -23,8 +23,8 @@ purpose text editing.
 <!-- vim-markdown-toc GFM -->
 
 * [Included Packages](#included-packages)
+  * [Interface](#interface)
   * [Structured Text documents](#structured-text-documents)
-  * [Appearance](#appearance)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -42,6 +42,16 @@ purpose text editing.
 ## Included Packages
 
 This project includes numerous packages as submodules.
+
+### Interface
+
+- **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
+  [the best color scheme 
+  ever](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
+
+- **[vim-stay](https://github.com/zhimsel/vim-stay)**: adds automated view
+  session creation and restoration whenever editing a buffer, across Vim 
+  sessions and window life cycles.
 
 ### Structured Text documents
 
@@ -63,9 +73,6 @@ These plugins extend Vim's built-in functionality:
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
 
-### Appearance
-
-- **vim-solarized**
 
 ### Vim utilities
 
