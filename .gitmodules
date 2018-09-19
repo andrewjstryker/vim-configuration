@@ -91,3 +91,6 @@
 [submodule "pack/denite.vim/start/denite.vim"]
 	path = pack/denite.nvim/start/denite.nvim
 	url = https://github.com/Shougo/denite.nvim.git
+[submodule "pack/vim-stay/start/vim-stay"]
+	path = pack/vim-stay/start/vim-stay
+	url = https://github.com/zhimsel/vim-stay.git
