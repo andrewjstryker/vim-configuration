@@ -97,3 +97,6 @@
 [submodule "pack/fzf.vim/start/fzf.vim"]
 	path = pack/fzf.vim/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/vim-multiple-cursors/start/vim-multiple-cursors"]
+	path = pack/vim-multiple-cursors/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
