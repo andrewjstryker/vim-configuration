@@ -18,5 +18,4 @@ set sw=2
 set st=2
 set et
 
-let R_in_buffer = 0
-let R_tmux_split = 1
+let R_in_buffer = 1
