@@ -100,3 +100,9 @@
 [submodule "pack/vim-multiple-cursors/start/vim-multiple-cursors"]
 	path = pack/vim-multiple-cursors/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "pack/FastFold/start/Fastfold"]
+	path = pack/FastFold/start/Fastfold
+	url = https://github.com/Konfekt/FastFold.git
+[submodule "pack/SimplyFold/start/SimplyFold"]
+	path = pack/SimplyFold/start/SimplyFold
+	url = https://github.com/tmhedberg/SimpylFold.git
