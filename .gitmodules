@@ -1,9 +1,6 @@
 [submodule "pack/vim-sensible/start/vim-sensible"]
 	path = pack/vim-sensible/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "pack/python-mode/start/python-mode"]
-	path = pack/python-mode/start/python-mode
-	url = https://github.com/python-mode/python-mode.git
 [submodule "pack/NrrwRgn/start/NrrwRgn"]
 	path = pack/NrrwRgn/start/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
@@ -115,3 +112,6 @@
 [submodule "pack/indentpython.vim/start/indentpython.vim"]
 	path = pack/indentpython.vim/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim.git
+[submodule "pack/YouCompleteMe/start/YouCompleteMe"]
+	path = pack/YouCompleteMe/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
