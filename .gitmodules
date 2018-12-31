@@ -115,3 +115,6 @@
 [submodule "pack/YouCompleteMe/start/YouCompleteMe"]
 	path = pack/YouCompleteMe/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "pack/xmledit/after/xmledit"]
+	path = pack/xmledit/start/xmledit
+	url = https://github.com/sukima/xmledit.git
