@@ -118,3 +118,9 @@
 [submodule "pack/xmledit/after/xmledit"]
 	path = pack/xmledit/start/xmledit
 	url = https://github.com/sukima/xmledit.git
+[submodule "pack/goyo.vom/start/goyo.vim"]
+	path = pack/goyo.vom/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
+[submodule "pack/limelight.vim/start/limelight.vim"]
+	path = pack/limelight.vim/start/limelight.vim
+	url = https://github.com/junegunn/limelight.vim.git
