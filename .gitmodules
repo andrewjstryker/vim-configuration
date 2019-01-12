@@ -124,3 +124,6 @@
 [submodule "pack/limelight.vim/start/limelight.vim"]
 	path = pack/limelight.vim/start/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
+[submodule "/home/andrew/.vim/pack/minpac/opt/minpac"]
+	path = /home/andrew/.vim/pack/minpac/opt/minpac
+	url = https://github.com/k-takata/minpac.git
