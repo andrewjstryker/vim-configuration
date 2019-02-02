@@ -118,3 +118,6 @@
 [submodule "pack/xmledit/after/xmledit"]
 	path = pack/xmledit/start/xmledit
 	url = https://github.com/sukima/xmledit.git
+[submodule "pack/jq.vim/start/jq.vim"]
+	path = pack/jq.vim/start/jq.vim
+	url = https://github.com/vito-c/jq.vim.git
