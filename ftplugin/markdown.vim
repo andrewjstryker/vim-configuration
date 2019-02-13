@@ -17,6 +17,7 @@ let g:pandoc#formatting#mode='ha'
 " wrap at 80 columns
 set textwidth=80
 set formatoptions+=t
+set formatoptions-=wa
 
 set shiftwidth=2
 set softtabstop=2
