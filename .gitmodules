@@ -127,3 +127,6 @@
 [submodule "pack/jq.vim/start/jq.vim"]
 	path = pack/jq.vim/start/jq.vim
 	url = https://github.com/vito-c/jq.vim.git
+[submodule "pack/vim-snipmate/start/vim-snippets"]
+	path = pack/vim-snipmate/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
