@@ -118,12 +118,15 @@
 [submodule "pack/xmledit/after/xmledit"]
 	path = pack/xmledit/start/xmledit
 	url = https://github.com/sukima/xmledit.git
-[submodule "pack/jq.vim/start/jq.vim"]
-	path = pack/jq.vim/start/jq.vim
-	url = https://github.com/vito-c/jq.vim.git
 [submodule "pack/goyo.vom/start/goyo.vim"]
 	path = pack/goyo.vom/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
 [submodule "pack/limelight.vim/start/limelight.vim"]
 	path = pack/limelight.vim/start/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
+[submodule "pack/jq.vim/start/jq.vim"]
+	path = pack/jq.vim/start/jq.vim
+	url = https://github.com/vito-c/jq.vim.git
+[submodule "pack/vim-snipmate/start/vim-snippets"]
+	path = pack/vim-snipmate/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
