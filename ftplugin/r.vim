@@ -1,9 +1,9 @@
 " R specific settings
 
-if exists("g:R_config")
+if exists("g:loaded_R_config")
   finish
 endif
-let g:R_config = 1
+let gloaded_:R_config = 1
 
 " convert ' _ ' to ' <- '
 let R_assign = 3
