@@ -130,3 +130,6 @@
 [submodule "pack/vim-snipmate/start/vim-snippets"]
 	path = pack/vim-snipmate/start/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "pack/vim-navigate/start/vim-navigate"]
+	path = pack/vim-navigate/start/vim-navigate
+	url = https://github.com/andrewjstryker/vim-navigate
