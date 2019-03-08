@@ -199,6 +199,8 @@ if has("autocmd")
                 \ endif
 endif
 
+let g:loaded_navigate = 1
+
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
 " Local settings under version control
