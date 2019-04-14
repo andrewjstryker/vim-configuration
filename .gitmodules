@@ -8,7 +8,7 @@
 	path = pack/Nvim-R/opt/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R.git
 [submodule "pack/LaTeX-Box/start/LaTeX-Box"]
-	path = pack/LaTeX-Box/start/LaTeX-Box
+	path = pack/LaTeX-Box/opt/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "pack/csv.vim/start/csv.vim"]
 	path = pack/csv.vim/start/csv.vim
