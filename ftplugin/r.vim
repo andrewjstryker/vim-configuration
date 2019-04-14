@@ -7,7 +7,7 @@
 if exists("g:loaded_R_config")
   finish
 endif
-let gloaded_:R_config = 1
+let gloaded_R_config = 1
 
 "-----------------------------------------------------------------------------"
 "
