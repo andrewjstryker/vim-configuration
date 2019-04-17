@@ -54,10 +54,6 @@ This project includes numerous packages as submodules.
   creation and restoration whenever editing a buffer, across Vim sessions and
   window life cycles.
 
-- **[NrrwRgn](https://github.com/chrisbra/NrrwRgn)**: make a region
-  inaccessible to focus attention on another region. This is a dependency for a
-  few other plugins.
-
 ### Text documents
 
 These plugins extend Vim's built-in functionality:
@@ -86,6 +82,10 @@ These plugins extend Vim's built-in functionality:
 
 
 ### Vim utilities
+
+- **[NrrwRgn](https://github.com/chrisbra/NrrwRgn)**: make a region
+  inaccessible to focus attention on another region. This is a dependency for a
+  few other plugins.
 
 ## Installation
 
