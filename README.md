@@ -54,6 +54,11 @@ This project includes numerous packages as submodules.
   creation and restoration whenever editing a buffer, across Vim sessions and
   window life cycles.
 
+- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free writing
+
+- **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
+  writing
+
 ### Text documents
 
 These plugins extend Vim's built-in functionality:
