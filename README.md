@@ -70,7 +70,7 @@ These plugins extend Vim's built-in functionality:
 - **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
   table of contents for Markdown files.
 
-- [vim-pandoc](https://github.com/vim-pandoc): integrate with
+- **[vim-pandoc](https://github.com/vim-pandoc)**: integrate with
   [pandoc](https://johnmacfarlane.net/pandoc) for a comfortable writing
   environment
 
