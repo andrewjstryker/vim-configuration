@@ -24,7 +24,8 @@ purpose text editing.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
-  * [Structured Text documents](#structured-text-documents)
+  * [Text documents](#text-documents)
+  * [Data files](#data-files)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -57,15 +58,9 @@ This project includes numerous packages as submodules.
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
-### Structured Text documents
+### Text documents
 
 These plugins extend Vim's built-in functionality:
-
-- **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
-  keywords versus values, uses Vim's conceal to hide JSON functionality.
-
-- **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
-  to work with JSON files.
 
 - **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
   highlighting, matching rules and mappings for [the original
@@ -73,6 +68,18 @@ These plugins extend Vim's built-in functionality:
 
 - **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
   table of contents for Markdown files.
+
+- [vim-pandoc](https://github.com/vim-pandoc): integrate with
+  [pandoc](https://johnmacfarlane.net/pandoc) for a comfortable writing
+  environment
+
+### Data files
+
+- **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
+  keywords versus values, uses Vim's conceal to hide JSON functionality.
+
+- **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
+  to work with JSON files.
 
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
