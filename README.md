@@ -44,6 +44,12 @@ purpose text editing.
 
 This project includes numerous packages as submodules.
 
+Here's what I need in my Vim configuration:
+
+- Looks good
+
+- 
+
 ### Interface
 
 - **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
