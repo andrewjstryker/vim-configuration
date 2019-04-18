@@ -130,3 +130,6 @@
 [submodule "pack/vim-navigate/start/vim-navigate"]
 	path = pack/vim-navigate/start/vim-navigate
 	url = https://github.com/andrewjstryker/vim-navigate
+[submodule "pack/goyo.vim/start/goyo.vim"]
+	path = pack/goyo.vim/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
