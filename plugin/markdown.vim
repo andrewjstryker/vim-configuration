@@ -1,5 +1,9 @@
 " Configuration for vim-markdown
 
+" Note: vim-markdown requires tabular.vim to load first. Since Vim uses
+" alphabetical ordering to sort files, tabular.vim **should** load before
+" vim-markdown
+
 if exists('g:markdown_config_loaded')
   finish
 endif
