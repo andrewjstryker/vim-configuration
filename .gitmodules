@@ -25,9 +25,6 @@
 [submodule "pack/vim-arline/start/vim-airline"]
 	path = pack/vim-arline/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/vim-scala/start/vim-scala"]
-	path = pack/vim-scala/start/vim-scala
-	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "pack/vim-easymotion/start/vim-easymotion"]
 	path = pack/vim-easymotion/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
