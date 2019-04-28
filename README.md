@@ -48,7 +48,7 @@ Here's what I need in my Vim configuration:
 
 - Looks good
 
-- 
+-
 
 ### Interface
 
