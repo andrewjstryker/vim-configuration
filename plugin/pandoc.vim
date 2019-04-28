@@ -12,3 +12,6 @@ endif
 if v:version < 704 || !has("python")
   let g:pandoc#modules#warn_disabled = 0
 endif
+
+" Fenced codeblock langurages
+let g:pandoc#syntax#codeblocks#embeds#langs = ["sh", "bash=sh", "python", "r"]
