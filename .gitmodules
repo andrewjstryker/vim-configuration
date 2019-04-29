@@ -127,3 +127,6 @@
 [submodule "pack/goyo.vim/start/goyo.vim"]
 	path = pack/goyo.vim/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "pack/vim-snipmate/start/vim-snipmate"]
+	path = pack/vim-snipmate/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
