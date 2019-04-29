@@ -46,15 +46,6 @@
 [submodule "pack/vim-rmarkdown/start/vim-markdown"]
 	path = pack/vim-rmarkdown/start/vim-markdown
 	url = https://github.com/vim-pandoc/vim-rmarkdown.git
-[submodule "pack/vim-pandoc/start/vim-pandoc"]
-	path = pack/vim-pandoc/start/vim-pandoc
-	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "pack/vim-pandoc-syntax/start/vim-pandoc-syntax"]
-	path = pack/vim-pandoc-syntax/start/vim-pandoc-syntax
-	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
-[submodule "pack/vim-pandoc-after/after/vim-pandoc-after"]
-	path = pack/vim-pandoc-after/after/vim-pandoc-after
-	url = https://github.com/vim-pandoc/vim-pandoc-after.git
 [submodule "pack/vim-redact-pass/start/vim-redact-pass"]
 	path = pack/vim-redact-pass/start/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
