@@ -1,3 +1,11 @@
+" git plugin configuration
+"
+if exists('g:git_config_loaded')
+  finish
+endif
+
+let g:git_config_loaded = 1
+
 " Don't load plugins that require git if we don't have git
 
 if !executable("git")
