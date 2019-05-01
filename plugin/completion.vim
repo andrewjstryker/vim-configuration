@@ -5,3 +5,5 @@ if exists('g:completion_config_loaded')
 endif
 
 let g:completion_config_loaded = 1
+
+let g:SuperTabSetDefaultCompletionType = "context"
