@@ -121,3 +121,6 @@
 [submodule "pack/vim-snipmate/start/vim-snipmate"]
 	path = pack/vim-snipmate/start/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/nerdtree-git-plugin/start/nerdtree-git-plugin"]
+	path = pack/nerdtree-git-plugin/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
