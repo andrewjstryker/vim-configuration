@@ -25,9 +25,6 @@
 [submodule "pack/vim-arline/start/vim-airline"]
 	path = pack/vim-arline/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/vim-scala/start/vim-scala"]
-	path = pack/vim-scala/start/vim-scala
-	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "pack/vim-easymotion/start/vim-easymotion"]
 	path = pack/vim-easymotion/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
@@ -49,15 +46,6 @@
 [submodule "pack/vim-rmarkdown/start/vim-markdown"]
 	path = pack/vim-rmarkdown/start/vim-markdown
 	url = https://github.com/vim-pandoc/vim-rmarkdown.git
-[submodule "pack/vim-pandoc/start/vim-pandoc"]
-	path = pack/vim-pandoc/start/vim-pandoc
-	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "pack/vim-pandoc-syntax/start/vim-pandoc-syntax"]
-	path = pack/vim-pandoc-syntax/start/vim-pandoc-syntax
-	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
-[submodule "pack/vim-pandoc-after/after/vim-pandoc-after"]
-	path = pack/vim-pandoc-after/after/vim-pandoc-after
-	url = https://github.com/vim-pandoc/vim-pandoc-after.git
 [submodule "pack/vim-redact-pass/start/vim-redact-pass"]
 	path = pack/vim-redact-pass/start/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
@@ -67,8 +55,8 @@
 [submodule "pack/vim-surround/start/vim-surround"]
 	path = pack/vim-surround/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "pack/vim-colors-solarized/start/vim-colors-soloarized"]
-	path = pack/vim-colors-solarized/start/vim-colors-soloarized
+[submodule "pack/vim-colors-solarized/start/vim-colors-solarized"]
+	path = pack/vim-colors-solarized/opt/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "pack/vim-dispatch/start/vim-dispatch"]
 	path = pack/vim-dispatch/start/vim-dispatch
@@ -91,9 +79,6 @@
 [submodule "pack/vim-stay/start/vim-stay"]
 	path = pack/vim-stay/start/vim-stay
 	url = https://github.com/zhimsel/vim-stay.git
-[submodule "pack/fzf.vim/start/fzf.vim"]
-	path = pack/fzf.vim/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/vim-multiple-cursors/start/vim-multiple-cursors"]
 	path = pack/vim-multiple-cursors/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
@@ -133,3 +118,12 @@
 [submodule "pack/goyo.vim/start/goyo.vim"]
 	path = pack/goyo.vim/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "pack/vim-snipmate/start/vim-snipmate"]
+	path = pack/vim-snipmate/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "pack/nerdtree-git-plugin/start/nerdtree-git-plugin"]
+	path = pack/nerdtree-git-plugin/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/nerdtree/start/nerdtree"]
+	path = pack/nerdtree/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
