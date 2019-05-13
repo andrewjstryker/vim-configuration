@@ -1,5 +1,14 @@
 # Vim Configuration
 
+You probably **don't** want to clone this repository.  I have been using Vim
+for a couple of decades and I care about my environment for editing file.
+I have put quite a bit of thought into how I want to edit files and how I want
+maintain a consistent environment across several machines.  So instead,
+explore this repository to see how I manage my Vim environment using native
+Vim package management and [Git
+submodules](https://git-scm.com/docs/git-submodule). Also, I explain which
+packages I use and, in some cases, which popular packages I don't use.
+
 Maintaining a consistent Vim environment across several machines can be a bit of
 a pain. That's mostly due to trying to keep third-party plugins and packages in
 sync. This project shows how to synchronize a complex configuration using:
