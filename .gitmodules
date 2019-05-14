@@ -127,3 +127,6 @@
 [submodule "pack/nerdtree/start/nerdtree"]
 	path = pack/nerdtree/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/Dockerfile.vim/start/Dockerfile.vim"]
+	path = pack/Dockerfile.vim/start/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git
