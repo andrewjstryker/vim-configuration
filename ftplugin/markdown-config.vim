@@ -1,4 +1,4 @@
-" Markdown commit specific settings
+" Markdown configuration
 
 if exists("b:loaded_markdown_config")
   finish
@@ -10,9 +10,6 @@ let b:loaded_markdown_config = 1
 if has("spell")
   setlocal spell spelllang=en_us
 endif
-
-" tell vim-pandoc to detect hard or soft wraps
-let g:pandoc#formatting#mode='ha'
 
 " wrap at 80 columns
 set textwidth=80
