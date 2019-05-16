@@ -11,9 +11,6 @@ if has("spell")
   setlocal spell spelllang=en_us
 endif
 
-" tell vim-pandoc to detect hard or soft wraps
-let g:pandoc#formatting#mode='ha'
-
 " wrap at 80 columns
 set textwidth=80
 set formatoptions+=t
