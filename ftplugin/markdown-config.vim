@@ -1,4 +1,4 @@
-" Markdown commit specific settings
+" Markdown configuration
 
 if exists("b:loaded_markdown_config")
   finish
