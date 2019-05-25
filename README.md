@@ -69,7 +69,7 @@ Here's what I need in my Vim configuration:
   focus on writing.
 
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
-  writing
+  writing. This is mostly useful as a compliment to Goyo.
 
 ### Text documents
 
