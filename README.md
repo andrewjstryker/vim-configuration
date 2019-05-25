@@ -61,7 +61,8 @@ Here's what I need in my Vim configuration:
 
 - **[vim-stay](https://github.com/zhimsel/vim-stay)**: automated view session
   creation and restoration whenever editing a buffer, across Vim sessions and
-  window life cycles.
+  window life cycles. This plugin keeps your place as you jump around files
+  without requiring you to do anything after configuring your vimrc.
 
 - **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free writing
 
