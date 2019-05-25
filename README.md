@@ -1,17 +1,13 @@
 # Vim Configuration
 
-You probably **don't** want to clone this repository.  I have been using Vim
-for a couple of decades and I care about my environment for editing file.
-I have put quite a bit of thought into how I want to edit files and how I want
-maintain a consistent environment across several machines.  So instead,
-explore this repository to see how I manage my Vim environment using native
-Vim package management and [Git
-submodules](https://git-scm.com/docs/git-submodule). Also, I explain which
-packages I use and, in some cases, which popular packages I don't use.
+You probably **don't** want to clone this repository. I'm somewhat obessive
+about my editting evironment. I need an environment that's easy to synchronize
+across a heteorgenous set of computers. I want an environment that supports my
+day-to-day work, but not one with lots of great packages that I rarely use. In
+summary, I made this for me, not you.
 
-Maintaining a consistent Vim environment across several machines can be a bit of
-a pain. That's mostly due to trying to keep third-party plugins and packages in
-sync. This project shows how to synchronize a complex configuration using:
+However, you might be interested in using this project as a template for
+managing your own Vim environment. Explore this repository to see how to use:
 
 * Native Vim package management. Beginning in version 8, Vim supports a package
   management that is conceptually similar to Tim Pope's excellent
@@ -22,10 +18,8 @@ sync. This project shows how to synchronize a complex configuration using:
   how we treat each of the plugins. We want to manage which version of a plugin
   we are using. We otherwise don't care about the development path of a plugin.
 
-A different perspective is that this project is sort-of a Vim plugin
-distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
-and have a 'batteries included' Vim, complete with popular plugins for general
-purpose text editing.
+Also, I explain which packages I use and, in some cases, which popular
+packages I don't use.
 
 ## Table of Contents
 
