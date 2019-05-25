@@ -64,7 +64,9 @@ Here's what I need in my Vim configuration:
   window life cycles. This plugin keeps your place as you jump around files
   without requiring you to do anything after configuring your vimrc.
 
-- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free writing
+- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free
+  writing. This plugin removes status bars and numbering when you need to
+  focus on writing.
 
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
   writing
