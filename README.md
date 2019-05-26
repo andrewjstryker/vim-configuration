@@ -82,9 +82,12 @@ These plugins extend Vim's built-in functionality:
 - **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
   table of contents for Markdown files.
 
-- **[vim-pandoc](https://github.com/vim-pandoc)**: integrate with
-  [pandoc](https://johnmacfarlane.net/pandoc) for a comfortable writing
-  environment
+I'm **not** using the following popular and excellent plugins:
+
+- **[vim-pandoc](https://github.com/vim-pandoc)**: integration with
+  [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
+  environment. However, this plugin only makes senses if you regularly use
+  Pandoc or want a WYSIWYG environment for editing semi-structured text file.
 
 ### Data files
 
