@@ -11,7 +11,7 @@
 	path = pack/LaTeX-Box/opt/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "pack/csv.vim/start/csv.vim"]
-	path = pack/csv.vim/add/csv.vim
+	path = pack/csv.vim/start/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
 [submodule "pack/vim-fugitive/start/vim-fugitive"]
 	path = pack/vim-fugitive/start/vim-fugitive
