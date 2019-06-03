@@ -88,12 +88,6 @@
 [submodule "pack/SimplyFold/start/SimplyFold"]
 	path = pack/SimplyFold/start/SimplyFold
 	url = https://github.com/tmhedberg/SimpylFold.git
-[submodule "pack/indentpython.vim"]
-	path = pack/indentpython.vim
-	url = https://github.com/vim-scripts/indentpython.vim.git
-[submodule "pack/indentpython/start/indentpython"]
-	path = pack/indentpython.vim/indentpython/start/indentpython
-	url = https://github.com/vim-scripts/indentpython.vim.git
 [submodule "pack/indentpython.vim/start/indentpython.vim"]
 	path = pack/indentpython.vim/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim.git
