@@ -124,3 +124,6 @@
 [submodule "pack/Dockerfile.vim/start/Dockerfile.vim"]
 	path = pack/Dockerfile.vim/start/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "pack/gundo.vim/start/gundo.vim"]
+	path = pack/gundo.vim/start/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
