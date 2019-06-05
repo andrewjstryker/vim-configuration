@@ -74,7 +74,7 @@ Here's what I need in my Vim configuration:
 
 ### Enhanced editing
 
-- **[gundo.vim](http://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
+- **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
 
 ### Text documents
 
