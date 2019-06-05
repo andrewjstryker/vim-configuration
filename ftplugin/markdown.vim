@@ -9,7 +9,6 @@ let b:loaded_markdown_config = 1
 " TODO: generalize this code
 if has("spell")
   setlocal spell spelllang=en_us
-  set spell
 endif
 
 " wrap at 80 columns
