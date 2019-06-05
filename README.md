@@ -100,7 +100,6 @@ I'm **not** using the following popular and excellent plugins:
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
 
-
 ### Vim utilities
 
 - **[NrrwRgn](https://github.com/chrisbra/NrrwRgn)**: make a region
