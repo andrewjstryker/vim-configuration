@@ -27,6 +27,7 @@ packages I don't use.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [Enhanced editing](#enhanced-editing)
   * [Text documents](#text-documents)
   * [Data files](#data-files)
   * [Vim utilities](#vim-utilities)
@@ -70,6 +71,10 @@ Here's what I need in my Vim configuration:
 
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
+
+### Enhanced editing
+
+- **[gundo.vim](http://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
 ### Text documents
 
