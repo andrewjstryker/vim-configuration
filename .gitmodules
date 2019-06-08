@@ -127,3 +127,6 @@
 [submodule "pack/gundo.vim/start/gundo.vim"]
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "pack/vim-VOoM/start/vim-voom"]
+	path = pack/vim-VOoM/start/vim-voom
+	url = https://github.com/vim-voom/VOoM.git
