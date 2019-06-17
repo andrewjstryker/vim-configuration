@@ -1,8 +1,13 @@
 # Vim Configuration
 
-Maintaining a consistent Vim environment across several machines can be a bit of
-a pain. That's mostly due to trying to keep third-party plugins and packages in
-sync. This project shows how to synchronize a complex configuration using:
+You probably **don't** want to clone this repository. I'm somewhat obsessive
+about my editing environment. I need an environment that's easy to synchronize
+across a heterogeneous set of computers. I want an environment that supports my
+day-to-day work, but not one with lots of great packages that I rarely use. In
+summary, I made this for me, not you.
+
+However, you might be interested in using this project as a template for
+managing your own Vim environment. Explore this repository to see how to use:
 
 * Native Vim package management. Beginning in version 8, Vim supports a package
   management that is conceptually similar to Tim Pope's excellent
@@ -13,10 +18,8 @@ sync. This project shows how to synchronize a complex configuration using:
   how we treat each of the plugins. We want to manage which version of a plugin
   we are using. We otherwise don't care about the development path of a plugin.
 
-A different perspective is that this project is sort-of a Vim plugin
-distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
-and have a 'batteries included' Vim, complete with popular plugins for general
-purpose text editing.
+Also, I explain which packages I use and, in some cases, which popular
+packages I don't use.
 
 ## Table of Contents
 
@@ -24,8 +27,10 @@ purpose text editing.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [Enhanced editing](#enhanced-editing)
   * [Text documents](#text-documents)
   * [Data files](#data-files)
+  * [Extra syntax support](#extra-syntax-support)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -44,20 +49,36 @@ purpose text editing.
 
 This project includes numerous packages as submodules.
 
+Here's what I need in my Vim configuration:
+
+- Looks good
+
+-
+
 ### Interface
 
 - **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
   [the best color scheme
-  ever](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
+  ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
 - **[vim-stay](https://github.com/zhimsel/vim-stay)**: automated view session
   creation and restoration whenever editing a buffer, across Vim sessions and
-  window life cycles.
+  window life cycles. This plugin keeps your place as you jump around files
+  without requiring you to do anything after configuring your vimrc.
 
-- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free writing
+- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free
+  writing. This plugin removes status bars and numbering when you need to
+  focus on writing.
 
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
-  writing
+  writing. This is mostly useful as a compliment to Goyo.
+
+### Enhanced editing
+
+- **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
+
+- **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
+  multiple text objects at once.
 
 ### Text documents
 
@@ -70,9 +91,12 @@ These plugins extend Vim's built-in functionality:
 - **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
   table of contents for Markdown files.
 
-- **[vim-pandoc](https://github.com/vim-pandoc)**: integrate with
-  [pandoc](https://johnmacfarlane.net/pandoc) for a comfortable writing
-  environment
+I'm **not** using the following popular and excellent plugins:
+
+- **[vim-pandoc](https://github.com/vim-pandoc)**: integration with
+  [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
+  environment. However, this plugin only makes senses if you regularly use
+  Pandoc or want a WYSIWYG environment for editing semi-structured text file.
 
 ### Data files
 
@@ -85,6 +109,14 @@ These plugins extend Vim's built-in functionality:
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
 
+### Extra syntax support
+
+- **[jq.vim](//github.com/vito-c/jq.vim)**: highlighting
+  [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
+  utility for manipulatingh JSON files.
+
+- **[Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)**: better
+    syntax file support plus snippets
 
 ### Vim utilities
 
