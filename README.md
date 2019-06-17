@@ -1,8 +1,8 @@
 # Vim Configuration
 
-You probably **don't** want to clone this repository. I'm somewhat obessive
-about my editting evironment. I need an environment that's easy to synchronize
-across a heteorgenous set of computers. I want an environment that supports my
+You probably **don't** want to clone this repository. I'm somewhat obsessive
+about my editing environment. I need an environment that's easy to synchronize
+across a heterogeneous set of computers. I want an environment that supports my
 day-to-day work, but not one with lots of great packages that I rarely use. In
 summary, I made this for me, not you.
 
