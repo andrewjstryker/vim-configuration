@@ -77,6 +77,9 @@ Here's what I need in my Vim configuration:
 
 - **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
 
+- **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
+  multiple text objects at once.
+
 ### Text documents
 
 These plugins extend Vim's built-in functionality:
