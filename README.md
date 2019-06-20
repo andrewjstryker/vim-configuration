@@ -30,7 +30,7 @@ packages I don't use.
   * [Enhanced editing](#enhanced-editing)
   * [Text documents](#text-documents)
   * [Data files](#data-files)
-  * [Extra syntax support](#extra-syntax-support)
+  * [Extra file type support](#extra-file-type-support)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -109,7 +109,7 @@ I'm **not** using the following popular and excellent plugins:
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
 
-### Extra syntax support
+### Extra file type support
 
 - **[jq.vim](//github.com/vito-c/jq.vim)**: highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
