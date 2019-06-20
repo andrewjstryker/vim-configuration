@@ -116,7 +116,7 @@ I'm **not** using the following popular and excellent plugins:
   utility for manipulatingh JSON files.
 
 - **[Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)**: better
-    syntax file support plus snippets
+  syntax file support plus snippets
 
 ### Vim utilities
 
