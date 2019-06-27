@@ -134,14 +134,24 @@ into your `~/.vim` directory:
 git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 ```
 
-Next, link to the `vimrc` file, after backing-up your own `vimrc`:
+Optionally, move your `.vimrc` to `.vimrc.after`:
 
 ```sh
-mv ~/.vimrc ~/.vimrc.bak
-ln -s ~/.vim/vimrc ~/.vimrc
+mv ~/.vimrc ~/.vimrc.after
 ```
 
+Note: `vim` will source `~/.vim/vimrc` and this file will source your
+`.vimrc.after` file.
+
 ## Managing Plugins and Packages
+
+You will need to run a few `git submodule` commands to update packages:
+
+```sh
+git submodule foreach git checkout master # otherwise the submodule might not be on a branch
+git submodule foreach git pull # get the latest commit for each package
+```
+
 
 ### Adding plugins
 
