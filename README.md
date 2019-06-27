@@ -28,7 +28,7 @@ packages I don't use.
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [Enhanced editing](#enhanced-editing)
-  * [Text documents](#text-documents)
+  * [Mark-up files](#mark-up-files)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
   * [Vim utilities](#vim-utilities)
@@ -80,9 +80,12 @@ Here's what I need in my Vim configuration:
 - **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
   multiple text objects at once.
 
-### Text documents
+### Mark-up files
 
-These plugins extend Vim's built-in functionality:
+These plugins extend Vim's built-in support for editing text documents:
+
+- **[LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box)**: lightweight
+  support for editing LaTeX files
 
 - **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
   highlighting, matching rules and mappings for [the original
