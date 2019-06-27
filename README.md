@@ -31,6 +31,7 @@ packages I don't use.
   * [Mark-up files](#mark-up-files)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
+  * [Programming](#programming)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -122,6 +123,11 @@ I'm **not** using the following popular and excellent plugins:
 
 - **[Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)**: better
   syntax file support plus snippets
+
+### Programming
+
+- **[SimplyFold](https://github.com/tmhedberg/SimpylFold)**: better folding for
+  Python files.
 
 ### Vim utilities
 
