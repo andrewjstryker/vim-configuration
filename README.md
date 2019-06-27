@@ -27,6 +27,7 @@ packages I don't use.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [OS Utilities](#os-utilities)
   * [Enhanced editing](#enhanced-editing)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
@@ -73,6 +74,10 @@ Here's what I need in my Vim configuration:
 
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
+
+### OS Utilities
+
+Extend Vim's interface for working with the host operating system:
 
 ### Enhanced editing
 
