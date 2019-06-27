@@ -79,7 +79,7 @@ Here's what I need in my Vim configuration:
 
 Extend Vim's interface for working with the host operating system:
 
-- **[NERDTree](https://github.com/scrooloose/nerdtree.git)**: explore the
+- **[NERDTree](https://github.com/scrooloose/nerdtree)**: explore the
   filesystem and open files/directories
 
 ### Enhanced editing
