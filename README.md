@@ -28,7 +28,7 @@ packages I don't use.
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [Enhanced editing](#enhanced-editing)
-  * [Mark-up files](#mark-up-files)
+  * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
   * [Programming](#programming)
@@ -83,7 +83,7 @@ Here's what I need in my Vim configuration:
 - **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
   multiple text objects at once.
 
-### Mark-up files
+### Text Documents
 
 These plugins extend Vim's built-in support for editing text documents:
 
@@ -128,6 +128,7 @@ I'm **not** using the following popular and excellent plugins:
 
 - **[SimplyFold](https://github.com/tmhedberg/SimpylFold)**: better folding for
   Python files.
+
 
 ### Vim utilities
 
