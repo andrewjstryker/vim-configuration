@@ -82,6 +82,9 @@ Extend Vim's interface for working with the host operating system:
 - **[NERDTree](https://github.com/scrooloose/nerdtree)**: explore the
   filesystem and open files/directories
 
+- **[nerdtree-git-plugin](//github.com/Xuyuanp/nerdtree-git-plugin)**: NERDTree
+  plugin that shows git status
+
 ### Enhanced editing
 
 - **[FastFold](https://github.com/Konfekt/FastFold)**: speed-up automatic folds
