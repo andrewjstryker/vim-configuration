@@ -75,6 +75,9 @@ Here's what I need in my Vim configuration:
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
+- [**supertab**](https://github.com/ervandew/supertab) Supertab is a vim plugin
+  which allows you to use <Tab> for all your insert completion needs (:help ins-completion).
+
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
