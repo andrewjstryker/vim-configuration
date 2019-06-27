@@ -27,10 +27,12 @@ packages I don't use.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [OS Utilities](#os-utilities)
   * [Enhanced editing](#enhanced-editing)
-  * [Text documents](#text-documents)
+  * [Text Documents](#text-documents)
   * [Data files](#data-files)
-  * [Extra syntax support](#extra-syntax-support)
+  * [Extra file type support](#extra-file-type-support)
+  * [Programming](#programming)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -73,16 +75,34 @@ Here's what I need in my Vim configuration:
 - **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
+- [**supertab**](https://github.com/ervandew/supertab) Supertab is a vim plugin
+  which allows you to use <Tab> for all your insert completion needs (:help ins-completion).
+
+### OS Utilities
+
+Extend Vim's interface for working with the host operating system:
+
+- **[NERDTree](https://github.com/scrooloose/nerdtree)**: explore the
+  filesystem and open files/directories
+
+- **[nerdtree-git-plugin](//github.com/Xuyuanp/nerdtree-git-plugin)**: NERDTree
+  plugin that shows git status
+
 ### Enhanced editing
+
+- **[FastFold](https://github.com/Konfekt/FastFold)**: speed-up automatic folds
 
 - **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
 
 - **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
   multiple text objects at once.
 
-### Text documents
+### Text Documents
 
-These plugins extend Vim's built-in functionality:
+These plugins extend Vim's built-in support for editing text documents:
+
+- **[LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box)**: lightweight
+  support for editing LaTeX files
 
 - **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
   highlighting, matching rules and mappings for [the original
@@ -109,14 +129,20 @@ I'm **not** using the following popular and excellent plugins:
 - **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
   character delimited files
 
-### Extra syntax support
+### Extra file type support
 
 - **[jq.vim](//github.com/vito-c/jq.vim)**: highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
   utility for manipulatingh JSON files.
 
 - **[Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)**: better
-    syntax file support plus snippets
+  syntax file support plus snippets
+
+### Programming
+
+- **[SimplyFold](https://github.com/tmhedberg/SimpylFold)**: better folding for
+  Python files.
+
 
 ### Vim utilities
 
@@ -134,14 +160,24 @@ into your `~/.vim` directory:
 git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 ```
 
-Next, link to the `vimrc` file, after backing-up your own `vimrc`:
+Optionally, move your `.vimrc` to `.vimrc.after`:
 
 ```sh
-mv ~/.vimrc ~/.vimrc.bak
-ln -s ~/.vim/vimrc ~/.vimrc
+mv ~/.vimrc ~/.vimrc.after
 ```
 
+Note: `vim` will source `~/.vim/vimrc` and this file will source your
+`.vimrc.after` file.
+
 ## Managing Plugins and Packages
+
+You will need to run a few `git submodule` commands to update packages:
+
+```sh
+git submodule foreach git checkout master # otherwise the submodule might not be on a branch
+git submodule foreach git pull # get the latest commit for each package
+```
+
 
 ### Adding plugins
 
