@@ -75,6 +75,8 @@ Here's what I need in my Vim configuration:
 
 ### Enhanced editing
 
+- **[FastFold](https://github.com/Konfekt/FastFold)**: speed-up automatic folds
+
 - **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
 
 - **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
