@@ -92,7 +92,7 @@ Extend Vim's interface for working with the host operating system:
 
 - [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds
 
-- [**gundo.vim**](http://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
+- [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
 - [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
@@ -108,7 +108,7 @@ These plugins extend Vim's built-in support for editing text documents:
 
 - [**vim-markdown**](https://github.com/vim-pandoc/vim-rmarkdown): syntax
   highlighting, matching rules and mappings for [the original
-  Markdown](http://daringfireball.net/projects/markdown/) and extensions.
+  Markdown](https://daringfireball.net/projects/markdown/) and extensions.
 
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
@@ -302,7 +302,7 @@ Here are a few places to learn more about Vim scripting, plugins/packages, and G
 
 - [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way**](http://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscrtip the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
