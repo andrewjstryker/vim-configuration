@@ -127,3 +127,6 @@
 [submodule "pack/gundo.vim/start/gundo.vim"]
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "pack/nerdcommenter/start/nerdcommenter"]
+	path = pack/nerdcommenter/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
