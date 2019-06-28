@@ -59,94 +59,94 @@ Here's what I need in my Vim configuration:
 
 ### Interface
 
-- **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
+- [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized):
   [the best color scheme
   ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
-- **[vim-stay](https://github.com/zhimsel/vim-stay)**: automated view session
+- [**vim-stay**](https://github.com/zhimsel/vim-stay): automated view session
   creation and restoration whenever editing a buffer, across Vim sessions and
   window life cycles. This plugin keeps your place as you jump around files
   without requiring you to do anything after configuring your vimrc.
 
-- **[goyo.vim](https://github.com/junegunn/limelight.vim)**: distraction free
+- [**goyo.vim**](https://github.com/junegunn/limelight.vim): distraction free
   writing. This plugin removes status bars and numbering when you need to
   focus on writing.
 
-- **[limelight.vim](https://github.com/junegunn/limelight.vim)**: hyper-focussed
+- [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
-- [**supertab**](https://github.com/ervandew/supertab) Supertab is a vim plugin
+- [**supertab****](https://github.com/ervandew/supertab) Supertab is a vim plugin
   which allows you to use <Tab> for all your insert completion needs (:help ins-completion).
 
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
 
-- **[NERDTree](https://github.com/scrooloose/nerdtree)**: explore the
+- [**NERDTree**](https://github.com/scrooloose/nerdtree): explore the
   filesystem and open files/directories
 
-- **[nerdtree-git-plugin](//github.com/Xuyuanp/nerdtree-git-plugin)**: NERDTree
+- [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
 
 ### Enhanced editing
 
-- **[FastFold](https://github.com/Konfekt/FastFold)**: speed-up automatic folds
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds
 
-- **[gundo.vim](http://github.com/sjl/gundo.vim)**: traverse Vim's undo-tree.
+- [**gundo.vim**](http://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
-- **[multiple-cursors](https://github.com/terryma/vim-multiple-cursors)**: edit
+- [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
 
 ### Text Documents
 
 These plugins extend Vim's built-in support for editing text documents:
 
-- **[LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box)**: lightweight
+- [**LaTeX-Box**](https://github.com/LaTeX-Box-Team/LaTeX-Box): lightweight
   support for editing LaTeX files
 
-- **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
+- [**vim-markdown**](https://github.com/vim-pandoc/vim-rmarkdown): syntax
   highlighting, matching rules and mappings for [the original
   Markdown](http://daringfireball.net/projects/markdown/) and extensions.
 
-- **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
+- [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
 I'm **not** using the following popular and excellent plugins:
 
-- **[vim-pandoc](https://github.com/vim-pandoc)**: integration with
+- [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
   environment. However, this plugin only makes senses if you regularly use
   Pandoc or want a WYSIWYG environment for editing semi-structured text file.
 
 ### Data files
 
-- **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
+- [**vim-json**](https://github.com/elzr/vim-json): distinct highlighting for
   keywords versus values, uses Vim's conceal to hide JSON functionality.
 
-- **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
+- [**vim-jdaddy**](https://github.com/tpope/vim-jdaddy): maps `aj` and friends
   to work with JSON files.
 
-- **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
+- [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
 
 ### Extra file type support
 
-- **[jq.vim](//github.com/vito-c/jq.vim)**: highlighting
+- [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
   utility for manipulatingh JSON files.
 
-- **[Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)**: better
+- [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
   syntax file support plus snippets
 
 ### Programming
 
-- **[SimplyFold](https://github.com/tmhedberg/SimpylFold)**: better folding for
+- [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
   Python files.
 
 
 ### Vim utilities
 
-- **[NrrwRgn](https://github.com/chrisbra/NrrwRgn)**: make a region
+- [**NrrwRgn**](https://github.com/chrisbra/NrrwRgn): make a region
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
@@ -283,7 +283,7 @@ There are a couple of things that you can do make collaboration easier:
 
 There are a few ways to get in touch with me:
 
-- File issues on GitHub as suggested in the [previous section](#contributing)
+- File issues on GitHub as suggested in the [previous section**](#contributing)
 
 - Send an email to axs @ sdf.org.
 
@@ -293,12 +293,12 @@ There are a few ways to get in touch with me:
 
 Here are a few places to learn more about Vim scripting, plugins/packages, and Git:
 
-- Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html) blog
+- Doug Black's [A Good Vimrc**](https://dougblack.io/words/a-good-vimrc.html) blog
   article contains quite a bit of good advice on how to write a good vimrc file.
 
-- [VimAwesome](https://vimawesome.com) has a superb interface to Vim plugins.
+- [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscrtip the Hard Way**](http://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
