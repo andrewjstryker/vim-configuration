@@ -97,6 +97,8 @@ Extend Vim's interface for working with the host operating system:
 - [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
 
+- [**tabular**](https://github.com/godlygeek/tabular): align text into tables
+
 ### Text Documents
 
 These plugins extend Vim's built-in support for editing text documents:
