@@ -154,6 +154,12 @@ I'm **not** using the following popular and excellent plugins:
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
+- [**tlib_vim**](): defines function common to several vim packages
+  <!--
+  - package 1
+  - paktong 2
+  -->
+
 ## Installation
 
 To install, you need to clone this repository and its
