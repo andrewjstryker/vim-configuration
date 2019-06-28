@@ -143,6 +143,8 @@ I'm **not** using the following popular and excellent plugins:
 - [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
   Python files.
 
+- [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
+  checking plugin that runs files through external syntax checkers
 
 ### Vim utilities
 
