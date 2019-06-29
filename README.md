@@ -113,7 +113,7 @@ These plugins extend Vim's built-in support for editing text documents:
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-I'm **not** using the following popular and excellent plugins:
+I'm **not** using the following popular and excellent plugin:
 
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
@@ -153,12 +153,6 @@ I'm **not** using the following popular and excellent plugins:
 - [**NrrwRgn**](https://github.com/chrisbra/NrrwRgn): make a region
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
-
-- [**tlib_vim**](): defines function common to several vim packages
-  <!--
-  - package 1
-  - paktong 2
-  -->
 
 ## Installation
 
