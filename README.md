@@ -116,7 +116,7 @@ These plugins extend Vim's built-in support for editing text documents:
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-I'm **not** using the following popular and excellent plugins:
+I'm **not** using the following popular and excellent plugin:
 
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
@@ -146,7 +146,7 @@ I'm **not** using the following popular and excellent plugins:
 ### Programming
 
 - [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
-  Python files.
+  Python files
 
 - [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
   checking plugin that runs files through external syntax checkers
@@ -157,11 +157,9 @@ I'm **not** using the following popular and excellent plugins:
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
-- [**tlib_vim**](): defines function common to several vim packages
-  <!--
-  - package 1
-  - paktong 2
-  -->
+- [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
+  patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
+  vim
 
 ## Installation
 
