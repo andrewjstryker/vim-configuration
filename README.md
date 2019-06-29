@@ -51,14 +51,21 @@ packages I don't use.
 
 This project includes numerous packages as submodules.
 
-<!--
 Here's what I need in my Vim configuration:
 
-- Looks good
+- Looks good. If I'm going to stare at a screen, let's put some effort into
+  making it look good.
 
--
+- Loads quickly. Vim is a test editor. Not an IDE or operating system (e.g.,
+  emacs). I want to quickly cycle through opening, editing, and closing files.
 
--->
+- Provides sensible configuration. I don't want to tweak settings as part of
+  a workflow. The more time I spend messing with Vim, the less I get done.
+
+- Supports *light* programming tasks.
+
+- Adapts to environment. There's no need to load a `git` support if you don't
+  have `git` installed.
 
 ### Interface
 
