@@ -11,6 +11,9 @@ if has("spell")
   setlocal spell spelllang=en_us
 endif
 
+" markdown doesn't directly support comments
+setlocal formatoptions-=c
+
 " wrap at 80 columns
 set textwidth=80
 set formatoptions+=t
