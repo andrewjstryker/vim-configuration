@@ -15,10 +15,10 @@ endif
 setlocal formatoptions-=c
 
 " wrap at 80 columns
-set textwidth=80
-set formatoptions+=t
-set formatoptions-=wa
+setlocal textwidth=80
+setlocal formatoptions+=t
+setlocal formatoptions-=wa
 
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+setlocal shiftwidth=2
+setlocal softtabstop=2
+setlocal expandtab
