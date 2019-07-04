@@ -78,8 +78,6 @@ set formatoptions+=1	" try not to break a line after a one-letter word
 if has("win32") && executable("grep")
     set grepprg=grep	" use grep instead of findstr where possible
 endif
-set guioptions-=T       " no need to have a toolbar
-set guioptions-=m       " I'm not fond of the menu either
 set history=50		" keep 50 lines of command line history
 set hlsearch		" show search results
 set modelines=15        " lines checked for set commands (big for timstamp)
@@ -129,6 +127,8 @@ if has("gui_running")
   set columns=90        " space for numbers and gutters
   set mouse=a           " enable mouse in all modes
   set lines=50	        " try to get extra lines
+  set guioptions-=T       " no need to have a toolbar
+  set guioptions-=m       " I'm not fond of the menu either
 endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
