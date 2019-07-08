@@ -154,7 +154,7 @@ endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
-" Color Scheme
+" Options for terminal display
 "
 " NOTE: This logic configures Vim for the Solarized colorscheme. If the
 " terminal is not using the Solarized color palette, this won't work
