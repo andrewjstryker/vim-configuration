@@ -218,3 +218,4 @@ set secure		" do not allow ":autocmd" in the current directory's
                         " .vimrc; prevents Trojan Horses; must be last
 
 " vim: sw=2 sts=2 et
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
