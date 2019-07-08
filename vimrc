@@ -170,25 +170,25 @@ let vimrplugin_vsplit = 1
 
 " color and GUI terminal settings
 if &t_Co > 1 || has("gui_running")
-    syntax on
-    " prefer solarized colorscheme
-    " assume that terminal emulator uses the solarized palette
-    try
-        if has("gui_running")
-            set background=light
-            " TODO: need exception catching and fallbacks
-            set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
-        else
-            set background=dark
-            if &term == "xterm"
-                " otherwise, this will look horrible
-                set t_Co=16
-            endif
-        endif
-        colorscheme solarized
-    catch /^Vim\%((\a\+)\)\=:E185/
-        colorscheme default " standard colorscheme is a safe choice
-    endtry
+  syntax on
+  " prefer solarized colorscheme
+  " assume that terminal emulator uses the solarized palette
+  try
+    if has("gui_running")
+      set background=light
+      " TODO: need exception catching and fallbacks
+      set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+    else
+      set background=dark
+      if &term == "xterm"
+          " otherwise, this will look horrible
+          set t_Co=16
+      endif
+    endif
+    colorscheme solarized
+  catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default " standard colorscheme is a safe choice
+  endtry
 endif
 
 " begin editing at last cursor position, if possible (must be after plugins)
