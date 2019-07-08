@@ -181,8 +181,8 @@ if &t_Co > 1 || has("gui_running")
     else
       set background=dark
       if &term == "xterm"
-          " otherwise, this will look horrible
-          set t_Co=16
+        " otherwise, this will look horrible
+        set t_Co=16
       endif
     endif
     colorscheme solarized
