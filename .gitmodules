@@ -130,3 +130,6 @@
 [submodule "pack/nerdcommenter/start/nerdcommenter"]
 	path = pack/nerdcommenter/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
+	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
