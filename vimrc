@@ -54,9 +54,6 @@ set cpoptions-=C	" do not concatenate sourced line beginning with a \
 set cpoptions-=c	" begin searches one character from current position
 set cpoptions+=J	" sentences have two spaces that follow the ., !, or ?
 set cpoptions+=j	" insert two spaces after join when lines ends with .
-if has("unix") && filereadable("/usr/share/dict/words")
-  set dictionary+=/usr/share/dict/words	" FHS word list location
-endif
 set cursorline          " highlight current line
 set display+=lastline   " show as much of the last line as possible
 set noexrc              " do not read .vimrc and friends in current directory
@@ -143,13 +140,16 @@ endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
-"	plugins and scripts
+" Unix settings
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-" access to man pages with :Man
 if has("unix")
-    source $VIMRUNTIME/ftplugin/man.vim
+  if filereadable("/usr/share/dict/words")
+    set dictionary+=/usr/share/dict/words	" FHS word list location
+  endif
+  " access to man pages with :Man
+  source $VIMRUNTIME/ftplugin/man.vim
 endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
