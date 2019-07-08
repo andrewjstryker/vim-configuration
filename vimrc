@@ -86,7 +86,6 @@ set nolist		" do not show listchars by default
 set listchars=tab:»·	" list characters (»· will not work on all terminals)
 set listchars+=trail:·,extends:¤
 set mouse=		" disable mouse in Normal, Visual, Insert, and Command
-set mousehide		" hide the mouse pointer while typing (gui only)
 set mousemodel=extend	" right button extends selection, middle pastes
 set nrformats-=octal    " don't use octal numbers with 
 set printoptions+=syntax:off,paper:letter	" options for hardcopy
@@ -129,6 +128,7 @@ if has("gui_running")
   set lines=50	        " try to get extra lines
   set guioptions-=T       " no need to have a toolbar
   set guioptions-=m       " I'm not fond of the menu either
+  set mousehide		" hide the mouse pointer while typing (gui only)
 endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
