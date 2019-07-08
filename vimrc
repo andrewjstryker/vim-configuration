@@ -164,8 +164,18 @@ let vimrplugin_vsplit = 1
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
-"	Color Scheme
+" Color Scheme
 "
+" NOTE: This logic configures Vim for the Solarized colorscheme. If the
+" terminal is not using the Solarized color palette, this won't work
+" correctly.
+"
+" Also, since I rarely use the GUI version of Vim and since I can't be sure
+" which fonts are on a system, I have not optimized the GUI. When in the GUI,
+" you *should* get Solarized with light background with Source Code Pro for
+" Powerline font. If you don't have that font installed, I suspect that you
+" will get the default system font. Unless that happens to be a	Powerline
+" font, your status bar won't look that good.
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 " color and GUI terminal settings
