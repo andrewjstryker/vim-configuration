@@ -27,6 +27,13 @@ set expandtab
 
 packadd Nvim-R
 
+" need a home for this:
+let g:ScreenImpl = 'Tmux'
+
+let vimrplugin_assign = 0
+let vimrplugin_only_in_tmux = 1
+let vimrplugin_vsplit = 1
+
 " convert ' _ ' to ' <- '
 let R_assign = 3
 let R_in_buffer = 1
