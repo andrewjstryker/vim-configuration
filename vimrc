@@ -187,7 +187,7 @@ if &t_Co > 1 || has("gui_running")
     endif
     colorscheme solarized
   catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default " standard colorscheme is a safe choice
+    colorscheme default " standard colorscheme is a safe choice
   endtry
 endif
 
