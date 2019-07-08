@@ -147,9 +147,6 @@ endif
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-" DrawIt
-let g:DrChipTopLvlMenu = "Plugins."
-
 " access to man pages with :Man
 if has("unix")
     source $VIMRUNTIME/ftplugin/man.vim
