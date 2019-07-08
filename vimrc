@@ -54,9 +54,6 @@ set cpoptions-=C	" do not concatenate sourced line beginning with a \
 set cpoptions-=c	" begin searches one character from current position
 set cpoptions+=J	" sentences have two spaces that follow the ., !, or ?
 set cpoptions+=j	" insert two spaces after join when lines ends with .
-if has("unix") && filereadable("/usr/share/dict/words")
-  set dictionary+=/usr/share/dict/words	" FHS word list location
-endif
 set cursorline          " highlight current line
 set display+=lastline   " show as much of the last line as possible
 set noexrc              " do not read .vimrc and friends in current directory
@@ -78,8 +75,6 @@ set formatoptions+=1	" try not to break a line after a one-letter word
 if has("win32") && executable("grep")
     set grepprg=grep	" use grep instead of findstr where possible
 endif
-set guioptions-=T       " no need to have a toolbar
-set guioptions-=m       " I'm not fond of the menu either
 set history=50		" keep 50 lines of command line history
 set hlsearch		" show search results
 set modelines=15        " lines checked for set commands (big for timstamp)
@@ -88,7 +83,6 @@ set nolist		" do not show listchars by default
 set listchars=tab:»·	" list characters (»· will not work on all terminals)
 set listchars+=trail:·,extends:¤
 set mouse=		" disable mouse in Normal, Visual, Insert, and Command
-set mousehide		" hide the mouse pointer while typing (gui only)
 set mousemodel=extend	" right button extends selection, middle pastes
 set nrformats-=octal    " don't use octal numbers with 
 set printoptions+=syntax:off,paper:letter	" options for hardcopy
@@ -129,6 +123,9 @@ if has("gui_running")
   set columns=90        " space for numbers and gutters
   set mouse=a           " enable mouse in all modes
   set lines=50	        " try to get extra lines
+  set guioptions-=T       " no need to have a toolbar
+  set guioptions-=m       " I'm not fond of the menu either
+  set mousehide		" hide the mouse pointer while typing (gui only)
 endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
@@ -143,52 +140,55 @@ endif
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
-"	plugins and scripts
+" Options for Unix
 "
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-" DrawIt
-let g:DrChipTopLvlMenu = "Plugins."
-
-" access to man pages with :Man
 if has("unix")
-    source $VIMRUNTIME/ftplugin/man.vim
+  if filereadable("/usr/share/dict/words")
+    set dictionary+=/usr/share/dict/words	" FHS word list location
+  endif
+  " access to man pages with :Man
+  source $VIMRUNTIME/ftplugin/man.vim
 endif
 
-" need a home for this:
-let g:ScreenImpl = 'Tmux'
-
-let vimrplugin_assign = 0
-let vimrplugin_only_in_tmux = 1
-let vimrplugin_vsplit = 1
-
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
-"	Color Scheme
+" Options for terminal display
 "
+" NOTE: This logic configures Vim for the Solarized colorscheme. If the
+" terminal is not using the Solarized color palette, this won't work
+" correctly.
+"
+" Also, since I rarely use the GUI version of Vim and since I can't be sure
+" which fonts are on a system, I have not optimized the GUI. When in the GUI,
+" you *should* get Solarized with light background with Source Code Pro for
+" Powerline font. If you don't have that font installed, I suspect that you
+" will get the default system font. Unless that happens to be a	Powerline
+" font, your status bar won't look that good.
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 " color and GUI terminal settings
 if &t_Co > 1 || has("gui_running")
-    syntax on
-    " prefer solarized colorscheme
-    " assume that terminal emulator uses the solarized palette
-    try
-        if has("gui_running")
-            set background=light
-            " TODO: need exception catching and fallbacks
-            set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
-        else
-            set background=dark
-            if &term == "xterm"
-                " otherwise, this will look horrible
-                set t_Co=16
-            endif
-        endif
-        colorscheme solarized
-    catch /^Vim\%((\a\+)\)\=:E185/
-        colorscheme default " standard colorscheme is a safe choice
-    endtry
+  syntax on
+  " prefer solarized colorscheme
+  " assume that terminal emulator uses the solarized palette
+  try
+    if has("gui_running")
+      set background=light
+      " TODO: need exception catching and fallbacks
+      set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+    else
+      set background=dark
+      if &term == "xterm"
+        " otherwise, this will look horrible
+        set t_Co=16
+      endif
+    endif
+    colorscheme solarized
+  catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme default " standard colorscheme is a safe choice
+  endtry
 endif
 
 " begin editing at last cursor position, if possible (must be after plugins)
@@ -198,8 +198,6 @@ if has("autocmd")
                 \ execute "normal '\"" |
                 \ endif
 endif
-
-let g:loaded_navigate = 1
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
@@ -219,4 +217,5 @@ let g:loaded_navigate = 1
 set secure		" do not allow ":autocmd" in the current directory's
                         " .vimrc; prevents Trojan Horses; must be last
 
-" vim: sw=4 et
+" vim: sw=2 sts=2 et
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
