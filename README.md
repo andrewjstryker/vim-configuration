@@ -145,12 +145,14 @@ I'm **not** using the following popular and excellent plugin:
 
 ### Extra file type support
 
+Plugins with better support for certain file types:
+
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
-  utility for manipulatingh JSON files.
+  utility for manipulating JSON files.
 
 - [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
-  syntax file support plus snippets
+  syntax file support plus snippets.
 
 ### Programming
 
