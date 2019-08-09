@@ -73,7 +73,7 @@ Here's what I need in my Vim configuration:
 ### Interface
 
 - [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized):
-  [the best color scheme
+  [the most important and best color scheme
   ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
 - [**vim-stay**](https://github.com/zhimsel/vim-stay): automated view session
