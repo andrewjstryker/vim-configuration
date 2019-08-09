@@ -82,8 +82,7 @@ Here's what I need in my Vim configuration:
   without requiring you to do anything after configuring your vimrc.
 
 - [**goyo.vim**](https://github.com/junegunn/limelight.vim): distraction free
-  writing. This plugin removes status bars and numbering when you need to
-  focus on writing.
+  writing. This plugin removes status bars and numbering when you want focus.
 
 - [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
