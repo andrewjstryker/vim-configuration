@@ -28,7 +28,7 @@ packages I don't use.
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [OS Utilities](#os-utilities)
-  * [Enhanced editing](#enhanced-editing)
+  * [Editing tools](#editing-tools)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
@@ -100,16 +100,16 @@ Extend Vim's interface for working with the host operating system:
 - [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
 
-### Enhanced editing
+### Editing tools
 
-- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
 - [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
 - [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
 
-- [**tabular**](https://github.com/godlygeek/tabular): align text into tables
+- [**tabular**](https://github.com/godlygeek/tabular): align text into tables.
 
 ### Text Documents
 
