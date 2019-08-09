@@ -88,7 +88,7 @@ Here's what I need in my Vim configuration:
   writing. This is mostly useful as a compliment to Goyo.
 
 - [**supertab****](https://github.com/ervandew/supertab): allows you to use
-  <kbd>Tab</kbd> for all your insert completion needs
+  <kbd>Tab</kbd> for all your insert completion needs.
 
 ### OS Utilities
 
