@@ -87,8 +87,7 @@ Here's what I need in my Vim configuration:
 - [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
-- [**supertab****](https://github.com/ervandew/supertab): allows you to use
-  <kbd>Tab</kbd> for all your insert completion needs.
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
 ### OS Utilities
 
@@ -102,7 +101,8 @@ Extend Vim's interface for working with the host operating system:
 
 ### Editing tools
 
-- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
+- [**supertab****](https://github.com/ervandew/supertab): allows you to use
+  <kbd>Tab</kbd> for all your insert completion needs.
 
 - [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
