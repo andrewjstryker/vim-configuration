@@ -156,11 +156,17 @@ Plugins with better support for certain file types:
 
 ### Programming
 
+Plugins for a better programming experience:
+
 - [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
-  Python files
+  Python files.
 
 - [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
-  checking plugin that runs files through external syntax checkers
+  checking plugin that runs files through external syntax checkers.
+
+<!--
+Describe the plugin that I'm **not** using.
+-->
 
 ### Vim utilities
 
