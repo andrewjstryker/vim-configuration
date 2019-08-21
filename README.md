@@ -28,7 +28,7 @@ packages I don't use.
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [OS Utilities](#os-utilities)
-  * [Enhanced editing](#enhanced-editing)
+  * [Editing tools](#editing-tools)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
@@ -54,16 +54,26 @@ This project includes numerous packages as submodules.
 <!--
 Here's what I need in my Vim configuration:
 
-- Looks good
+- Looks good. If I'm going to stare at a screen, let's put some effort into
+  making it look good.
 
--
+- Loads quickly. Vim is a test editor. Not an IDE or operating system (e.g.,
+  emacs). I want to quickly cycle through opening, editing, and closing files.
+
+- Provides sensible configuration. I don't want to tweak settings as part of
+  a workflow. The more time I spend messing with Vim, the less I get done.
+
+- Supports *light* programming tasks.
+
+- Adapts to environment. There's no need to load a `git` support if you don't
+  have `git` installed.
 
 -->
 
 ### Interface
 
 - [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized):
-  [the best color scheme
+  [the most important and best color scheme
   ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
 - [**vim-stay**](https://github.com/zhimsel/vim-stay): automated view session
@@ -72,14 +82,12 @@ Here's what I need in my Vim configuration:
   without requiring you to do anything after configuring your vimrc.
 
 - [**goyo.vim**](https://github.com/junegunn/limelight.vim): distraction free
-  writing. This plugin removes status bars and numbering when you need to
-  focus on writing.
+  writing. This plugin removes status bars and numbering when you want focus.
 
 - [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
-- [**supertab****](https://github.com/ervandew/supertab): allows you to use
-  <kbd>Tab</kbd> for all your insert completion needs
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
 ### OS Utilities
 
@@ -91,16 +99,17 @@ Extend Vim's interface for working with the host operating system:
 - [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
 
-### Enhanced editing
+### Editing tools
 
-- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds
+- [**supertab****](https://github.com/ervandew/supertab): allows you to use
+  <kbd>Tab</kbd> for all your insert completion needs.
 
 - [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
 - [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
 
-- [**tabular**](https://github.com/godlygeek/tabular): align text into tables
+- [**tabular**](https://github.com/godlygeek/tabular): align text into tables.
 
 ### Text Documents
 
@@ -136,20 +145,28 @@ I'm **not** using the following popular and excellent plugin:
 
 ### Extra file type support
 
+Plugins with better support for certain file types:
+
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
-  utility for manipulatingh JSON files.
+  utility for manipulating JSON files.
 
 - [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
-  syntax file support plus snippets
+  syntax file support plus snippets.
 
 ### Programming
+
+Plugins for a better programming experience:
 
 - [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
   Python files
 
 - [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
-  checking plugin that runs files through external syntax checkers
+  checking plugin that runs files through external syntax checkers.
+
+<!--
+Describe the plugin that I'm **not** using.
+-->
 
 ### Vim utilities
 
