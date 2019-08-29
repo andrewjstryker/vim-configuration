@@ -168,6 +168,9 @@ Plugins for a better programming experience:
 - [**Nvim-R**](https://github.com/jalvesaq/Nvim-R): editing environment and
   interactive interpreter interface for R.
 
+- [**indentpython**](https://github.com/vim-scripts/indentpython.vim): conform
+  Python file indenting with PEP 8
+
 <!--
 Describe the plugin that I'm **not** using.
 -->
