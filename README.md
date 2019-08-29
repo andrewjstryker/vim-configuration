@@ -165,6 +165,9 @@ Plugins for a better programming experience:
 - [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
   checking plugin that runs files through external syntax checkers.
 
+- [**Nvim-R**](https://github.com/jalvesaq/Nvim-R): editing environment and
+  interactive interpreter interface for R.
+
 <!--
 Describe the plugin that I'm **not** using.
 -->
