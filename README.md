@@ -116,7 +116,8 @@ Extend Vim's interface for working with the host operating system:
 These plugins extend Vim's built-in support for editing text documents:
 
 - [**LaTeX-Box**](https://github.com/LaTeX-Box-Team/LaTeX-Box): lightweight
-  support for editing LaTeX files
+  support for editing LaTeX files, including compilation with `latexmk`,
+  completion commands, table of contents for navigating large files, and more.
 
 - [**vim-markdown**](https://github.com/vim-pandoc/vim-rmarkdown): syntax
   highlighting, matching rules and mappings for [the original
