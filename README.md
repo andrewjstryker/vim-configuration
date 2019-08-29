@@ -178,6 +178,8 @@ Describe the plugin that I'm **not** using.
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
+<!-- why denite? -->
+
 ## Installation
 
 To install, you need to clone this repository and its
