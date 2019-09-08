@@ -149,8 +149,8 @@ I'm **not** using the following popular and excellent plugin:
 Plugins with better support for certain file types:
 
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
-  [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
-  utility for manipulating JSON files.
+  [`jq`](https://stedolan.github.io/jq/manual/), the excellent utility for
+  manipulating JSON files.
 
 - [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
   syntax file support plus snippets.
@@ -184,14 +184,6 @@ Describe the plugin that I'm **not** using.
 - [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
   patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
   vim
-
-- [**tlib_vim**](): defines function common to several vim packages
-  <!--
-  - package 1
-  - paktong 2
-  -->
-
-<!-- why denite? -->
 
 ## Installation
 
