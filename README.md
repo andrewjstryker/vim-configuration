@@ -51,6 +51,7 @@ packages I don't use.
 
 This project includes numerous packages as submodules.
 
+<!--
 Here's what I need in my Vim configuration:
 
 - Looks good. If I'm going to stare at a screen, let's put some effort into
@@ -66,6 +67,8 @@ Here's what I need in my Vim configuration:
 
 - Adapts to environment. There's no need to load a `git` support if you don't
   have `git` installed.
+
+-->
 
 ### Interface
 
