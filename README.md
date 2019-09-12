@@ -144,6 +144,9 @@ I'm **not** using the following popular and excellent plugin:
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
 
+  - [**xmledit**](http://github.com/sukima/xmledit): functions for editing XML
+    documents.
+
 ### Extra file type support
 
 Plugins with better support for certain file types:
