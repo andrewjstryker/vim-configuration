@@ -181,6 +181,9 @@ Describe the plugin that I'm **not** using.
   inaccessible to focus attention on another region. This is a dependency for a
   few other plugins.
 
+- [**vim-addon-mw-utils**](https://github.com/MarcWeber/vim-addon-manager-known-repositories):
+  various utilities such as caching interpreted contents of files and advanced globing
+
 <!-- why denite? -->
 
 ## Installation
