@@ -144,6 +144,9 @@ I'm **not** using the following popular and excellent plugin:
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
 
+  - [**xmledit**](http://github.com/sukima/xmledit): functions for editing XML
+    documents.
+
 ### Extra file type support
 
 Plugins with better support for certain file types:
@@ -178,9 +181,24 @@ Describe the plugin that I'm **not** using.
 ### Vim utilities
 
 - [**NrrwRgn**](https://github.com/chrisbra/NrrwRgn): make a region
-  inaccessible to focus attention on another region. This is a dependency for a
-  few other plugins.
+  inaccessible to focus attention on another region. This is a dependency for
+  vim-airline and vim-markdown.
 
+- [**vim-addon-mw-utils**](https://github.com/MarcWeber/vim-addon-manager-known-repositories):
+  various utilities such as caching interpreted contents of files and advanced
+  globing. Dependency for vim-snipmate.
+
+<<<<<<< HEAD
+||||||| merged common ancestors
+<<<<<<<<< Temporary merge branch 1
+<!-- why denite? -->
+
+||||||||| merged common ancestors
+=========
+=======
+<!-- why denite? -->
+
+>>>>>>> complete-readme
 - [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
   patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
   vim
