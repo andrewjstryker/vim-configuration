@@ -190,6 +190,10 @@ Describe the plugin that I'm **not** using.
 
 <!-- why denite? -->
 
+- [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
+  patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
+  vim
+
 ## Installation
 
 To install, you need to clone this repository and its
