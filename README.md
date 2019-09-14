@@ -186,17 +186,6 @@ Describe the plugin that I'm **not** using.
   various utilities such as caching interpreted contents of files and advanced
   globing. Dependency for vim-snipmate.
 
-<<<<<<< HEAD
-||||||| merged common ancestors
-<<<<<<<<< Temporary merge branch 1
-<!-- why denite? -->
-
-||||||||| merged common ancestors
-=========
-=======
-<!-- why denite? -->
-
->>>>>>> complete-readme
 - [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
   patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
   vim
