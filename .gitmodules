@@ -91,9 +91,6 @@
 [submodule "pack/indentpython.vim/start/indentpython.vim"]
 	path = pack/indentpython.vim/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim.git
-[submodule "pack/xmledit/after/xmledit"]
-	path = pack/xmledit/start/xmledit
-	url = https://github.com/sukima/xmledit.git
 [submodule "pack/goyo.vom/start/goyo.vim"]
 	path = pack/goyo.vim/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
