@@ -1,8 +1,13 @@
 # Vim Configuration
 
-Maintaining a consistent Vim environment across several machines can be a bit of
-a pain. That's mostly due to trying to keep third-party plugins and packages in
-sync. This project shows how to synchronize a complex configuration using:
+You probably **don't** want to clone this repository. I'm somewhat obsessive
+about my editing environment. I need an environment that's easy to synchronize
+across a heterogeneous set of computers. I want an environment that supports my
+day-to-day work, but not one with lots of great packages that I rarely use. In
+summary, I made this for me, not you.
+
+However, you might be interested in using this project as a template for
+managing your own Vim environment. Explore this repository to see how to use:
 
 * Native Vim package management. Beginning in version 8, Vim supports a package
   management that is conceptually similar to Tim Pope's excellent
@@ -13,10 +18,8 @@ sync. This project shows how to synchronize a complex configuration using:
   how we treat each of the plugins. We want to manage which version of a plugin
   we are using. We otherwise don't care about the development path of a plugin.
 
-A different perspective is that this project is sort-of a Vim plugin
-distribution.  Clone the repository to your `~/.vim` or `vimfiles` directory
-and have a 'batteries included' Vim, complete with popular plugins for general
-purpose text editing.
+Also, I explain which packages I use and, in some cases, which popular
+packages I don't use.
 
 ## Table of Contents
 
@@ -24,7 +27,12 @@ purpose text editing.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
-  * [Structured Text documents](#structured-text-documents)
+  * [OS Utilities](#os-utilities)
+  * [Editing tools](#editing-tools)
+  * [Text Documents](#text-documents)
+  * [Data files](#data-files)
+  * [Extra file type support](#extra-file-type-support)
+  * [Programming](#programming)
   * [Vim utilities](#vim-utilities)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
@@ -43,42 +51,148 @@ purpose text editing.
 
 This project includes numerous packages as submodules.
 
+<!--
+Here's what I need in my Vim configuration:
+
+- Looks good. If I'm going to stare at a screen, let's put some effort into
+  making it look good.
+
+- Loads quickly. Vim is a test editor. Not an IDE or operating system (e.g.,
+  emacs). I want to quickly cycle through opening, editing, and closing files.
+
+- Provides sensible configuration. I don't want to tweak settings as part of
+  a workflow. The more time I spend messing with Vim, the less I get done.
+
+- Supports *light* programming tasks.
+
+- Adapts to environment. There's no need to load a `git` support if you don't
+  have `git` installed.
+
+-->
+
 ### Interface
 
-- **[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)**:
-  [the best color scheme
-  ever](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
+- [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized):
+  [the most important and best color scheme
+  ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
-- **[vim-stay](https://github.com/zhimsel/vim-stay)**: automated view session
+- [**vim-stay**](https://github.com/zhimsel/vim-stay): automated view session
   creation and restoration whenever editing a buffer, across Vim sessions and
-  window life cycles.
+  window life cycles. This plugin keeps your place as you jump around files
+  without requiring you to do anything after configuring your vimrc.
 
-- **[NrrwRgn](https://github.com/chrisbra/NrrwRgn)**: make a region
-  inaccessible to focus attention on another region. This is a dependency for a
-  few other plugins.
+- [**goyo.vim**](https://github.com/junegunn/limelight.vim): distraction free
+  writing. This plugin removes status bars and numbering when you want focus.
 
-### Structured Text documents
+- [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
+  writing. This is mostly useful as a compliment to Goyo.
 
-These plugins extend Vim's built-in functionality:
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
-- **[vim-json](https://github.com/elzr/vim-json)**: distinct highlighting for
-  keywords versus values, uses Vim's conceal to hide JSON functionality.
+### OS Utilities
 
-- **[vim-jdaddy](https://github.com/tpope/vim-jdaddy)**: maps `aj` and friends
-  to work with JSON files.
+Extend Vim's interface for working with the host operating system:
 
-- **[vim-markdown](https://github.com/vim-pandoc/vim-rmarkdown)**: syntax
+- [**NERDTree**](https://github.com/scrooloose/nerdtree): explore the
+  filesystem and open files/directories
+
+- [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
+  plugin that shows git status
+
+### Editing tools
+
+- [**supertab****](https://github.com/ervandew/supertab): allows you to use
+  <kbd>Tab</kbd> for all your insert completion needs.
+
+- [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
+
+- [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
+  multiple text objects at once.
+
+- [**tabular**](https://github.com/godlygeek/tabular): align text into tables.
+
+### Text Documents
+
+These plugins extend Vim's built-in support for editing text documents:
+
+- [**LaTeX-Box**](https://github.com/LaTeX-Box-Team/LaTeX-Box): lightweight
+  support for editing LaTeX files, including compilation with `latexmk`,
+  completion commands, table of contents for navigating large files, and more.
+
+- [**vim-markdown**](https://github.com/vim-pandoc/vim-rmarkdown): syntax
   highlighting, matching rules and mappings for [the original
-  Markdown](http://daringfireball.net/projects/markdown/) and extensions.
+  Markdown](https://daringfireball.net/projects/markdown/) and extensions.
 
-- **[vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)**: generate
+- [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-- **[csv.vim](https://github.com/chrisbra/csv.vim)**: manipulate column data in
+I'm **not** using the following popular and excellent plugin:
+
+- [**vim-pandoc**](https://github.com/vim-pandoc): integration with
+  [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
+  environment. However, this plugin only makes senses if you regularly use
+  Pandoc or want a WYSIWYG environment for editing semi-structured text file.
+
+### Data files
+
+- [**vim-json**](https://github.com/elzr/vim-json): distinct highlighting for
+  keywords versus values, uses Vim's conceal to hide JSON functionality.
+
+- [**vim-jdaddy**](https://github.com/tpope/vim-jdaddy): maps `aj` and friends
+  to work with JSON files.
+
+- [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
 
+  - [**xmledit**](http://github.com/sukima/xmledit): functions for editing XML
+    documents.
+
+### Extra file type support
+
+Plugins with better support for certain file types:
+
+- [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
+  [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
+  utility for manipulating JSON files.
+
+- [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
+  syntax file support plus snippets.
+
+### Programming
+
+Plugins for a better programming experience:
+
+- [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
+  Python files.
+
+- [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
+  checking plugin that runs files through external syntax checkers.
+
+- [**Nvim-R**](https://github.com/jalvesaq/Nvim-R): editing environment and
+  interactive interpreter interface for R.
+
+- [**indentpython**](https://github.com/vim-scripts/indentpython.vim): conform
+  Python file indenting with PEP 8
+
+<!--
+Describe the plugin that I'm **not** using.
+-->
 
 ### Vim utilities
+
+- [**NrrwRgn**](https://github.com/chrisbra/NrrwRgn): make a region
+  inaccessible to focus attention on another region. This is a dependency for
+  vim-airline and vim-markdown.
+
+- [**vim-addon-mw-utils**](https://github.com/MarcWeber/vim-addon-manager-known-repositories):
+  various utilities such as caching interpreted contents of files and advanced
+  globing. Dependency for vim-snipmate.
+
+<!-- why denite? -->
+
+- [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
+  patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
+  vim
 
 ## Installation
 
@@ -90,14 +204,24 @@ into your `~/.vim` directory:
 git clone --recursive https://github.com/andrewjstryker/vim-configuration.git ~/.vim
 ```
 
-Next, link to the `vimrc` file, after backing-up your own `vimrc`:
+Optionally, move your `.vimrc` to `.vimrc.after`:
 
 ```sh
-mv ~/.vimrc ~/.vimrc.bak
-ln -s ~/.vim/vimrc ~/.vimrc
+mv ~/.vimrc ~/.vimrc.after
 ```
 
+Note: `vim` will source `~/.vim/vimrc` and this file will source your
+`.vimrc.after` file.
+
 ## Managing Plugins and Packages
+
+You will need to run a few `git submodule` commands to update packages:
+
+```sh
+git submodule foreach git checkout master # otherwise the submodule might not be on a branch
+git submodule foreach git pull # get the latest commit for each package
+```
+
 
 ### Adding plugins
 
@@ -203,7 +327,7 @@ There are a couple of things that you can do make collaboration easier:
 
 There are a few ways to get in touch with me:
 
-- File issues on GitHub as suggested in the [previous section](#contributing)
+- File issues on GitHub as suggested in the [previous section**](#contributing)
 
 - Send an email to axs @ sdf.org.
 
@@ -213,12 +337,12 @@ There are a few ways to get in touch with me:
 
 Here are a few places to learn more about Vim scripting, plugins/packages, and Git:
 
-- Doug Black's [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html) blog
+- Doug Black's [A Good Vimrc**](https://dougblack.io/words/a-good-vimrc.html) blog
   article contains quite a bit of good advice on how to write a good vimrc file.
 
-- [VimAwesome](https://vimawesome.com) has a superb interface to Vim plugins.
+- [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscrtip the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
