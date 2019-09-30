@@ -128,7 +128,7 @@
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "pack/vim-VOoM/start/vim-voom"]
-	path = pack/vim-VOoM/start/vim-voom
+	path = pack/vim-VOoM/start/vim-VOoM
 	url = https://github.com/vim-voom/VOoM.git
 [submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
 	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
