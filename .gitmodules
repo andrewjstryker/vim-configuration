@@ -127,15 +127,9 @@
 [submodule "pack/gundo.vim/start/gundo.vim"]
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
-<<<<<<< HEAD
 [submodule "pack/vim-VOoM/start/vim-voom"]
 	path = pack/vim-VOoM/start/vim-voom
 	url = https://github.com/vim-voom/VOoM.git
-||||||| merged common ancestors
-=======
-[submodule "pack/nerdcommenter/start/nerdcommenter"]
-	path = pack/nerdcommenter/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
 	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
@@ -145,4 +139,3 @@
 [submodule "pack/vim-addon-mw-utils/start/vim-addon-mw-utils"]
 	path = pack/vim-addon-mw-utils/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
->>>>>>> master
