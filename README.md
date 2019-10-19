@@ -92,6 +92,9 @@ Here's what I need in my Vim configuration:
 - [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
   selection rather than counts.
 
+- [**repeat.vim**](https://github.com/tpope/vim-repeat): allow the repeat
+  command (`.`) to work with plugin maps.
+
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
