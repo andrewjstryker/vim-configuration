@@ -89,6 +89,9 @@ Here's what I need in my Vim configuration:
 
 - [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
+- [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
+  selection rather than counts.
+
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
