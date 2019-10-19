@@ -160,6 +160,9 @@ I'm **not** using the following package:
 
 Plugins with better support for certain file types:
 
+- [**vim-gnupg**](https://github.com/jamessan/vim-gnupg): prevent saving
+  potentially sensitive information with working with PGP files.
+
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
   utility for manipulating JSON files.
