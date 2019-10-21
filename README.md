@@ -27,13 +27,14 @@ packages I don't use.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [Vim Utilities](#vim-utilities)
   * [OS Utilities](#os-utilities)
   * [Editing tools](#editing-tools)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
   * [Programming](#programming)
-  * [Vim utilities](#vim-utilities)
+  * [Vim utilities](#vim-utilities-1)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
   * [Adding plugins](#adding-plugins)
@@ -88,6 +89,10 @@ Here's what I need in my Vim configuration:
   writing. This is mostly useful as a compliment to Goyo.
 
 - [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
+
+### Vim Utilities
+
+Extend Vim's native functionality.
 
 - [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
   selection rather than counts.
