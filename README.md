@@ -27,13 +27,14 @@ packages I don't use.
 
 * [Included Packages](#included-packages)
   * [Interface](#interface)
+  * [Vim Utilities](#vim-utilities)
   * [OS Utilities](#os-utilities)
   * [Editing tools](#editing-tools)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
   * [Programming](#programming)
-  * [Vim utilities](#vim-utilities)
+  * [Vim utilities](#vim-utilities-1)
 * [Installation](#installation)
 * [Managing Plugins and Packages](#managing-plugins-and-packages)
   * [Adding plugins](#adding-plugins)
@@ -89,11 +90,18 @@ Here's what I need in my Vim configuration:
 
 - [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
+### Vim Utilities
+
+Extend Vim's native functionality.
+
 - [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
   selection rather than counts.
 
 - [**repeat.vim**](https://github.com/tpope/vim-repeat): allow the repeat
   command (`.`) to work with plugin maps.
+
+- [**surround.vim**](https://github.com/tpope/vim-surround): commands for
+  enclosing text objects with quotes, brackets, etc.
 
 ### OS Utilities
 
@@ -102,8 +110,11 @@ Extend Vim's interface for working with the host operating system:
 - [**NERDTree**](https://github.com/scrooloose/nerdtree): explore the
   filesystem and open files/directories
 
-- [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
+- [**nerdtree-git-plugin**](https://github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
+
+- [**dispatch.vim**](https://github.com/tpope/vim-dispatch): run compiler
+  plugins as separate processes, where possible, and depending on system.
 
 ### Editing tools
 
@@ -162,6 +173,9 @@ Plugins with better support for certain file types:
 
 - [**vim-gnupg**](https://github.com/jamessan/vim-gnupg): prevent saving
   potentially sensitive information with working with PGP files.
+
+- [**redact_pass.vim**](https://sanctum.geek.nz/code/vim-redact-pass): disable
+  saving sensitive information when working with `pass(1)`.
 
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/), the excellent utility for
