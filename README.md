@@ -113,6 +113,9 @@ Extend Vim's interface for working with the host operating system:
 - [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
 
+- [**dispatch.vim**](https://github.com/tpope/vim-dispatch): run compiler
+  plugins as separate processes, where possible, and depending on system.
+
 ### Editing tools
 
 - [**supertab****](https://github.com/ervandew/supertab): allows you to use
