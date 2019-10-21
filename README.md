@@ -100,6 +100,9 @@ Extend Vim's native functionality.
 - [**repeat.vim**](https://github.com/tpope/vim-repeat): allow the repeat
   command (`.`) to work with plugin maps.
 
+- [**surround.vim**](https://github.com/tpope/vim-surround): commands for
+  enclosing text objects with quotes, brackets, etc.
+
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
