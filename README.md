@@ -89,6 +89,12 @@ Here's what I need in my Vim configuration:
 
 - [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
 
+- [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
+  selection rather than counts.
+
+- [**repeat.vim**](https://github.com/tpope/vim-repeat): allow the repeat
+  command (`.`) to work with plugin maps.
+
 ### OS Utilities
 
 Extend Vim's interface for working with the host operating system:
@@ -144,12 +150,18 @@ I'm **not** using the following popular and excellent plugin:
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
 
-  - [**xmledit**](http://github.com/sukima/xmledit): functions for editing XML
-    documents.
+I'm **not** using the following package:
+
+- [**xmledit**](http://github.com/sukima/xmledit): support for editing XML
+  documents. The package is no longer maintained and do not work with XML files
+  frequently enough to learn an XML optimized interface.
 
 ### Extra file type support
 
 Plugins with better support for certain file types:
+
+- [**vim-gnupg**](https://github.com/jamessan/vim-gnupg): prevent saving
+  potentially sensitive information with working with PGP files.
 
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
