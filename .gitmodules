@@ -139,3 +139,6 @@
 [submodule "pack/vim-addon-mw-utils/start/vim-addon-mw-utils"]
 	path = pack/vim-addon-mw-utils/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/vim-commentary/start/vim-commentary"]
+	path = pack/vim-commentary/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
