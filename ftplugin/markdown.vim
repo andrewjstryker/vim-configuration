@@ -1,4 +1,5 @@
 " Markdown configuration
+" TODO: handle `]c` mapping conflict with the git-gutter plugin
 
 if exists("b:loaded_markdown_config")
   finish
