@@ -28,7 +28,6 @@ setlocal formatoptions+=c  " auto-wrap comments
 setlocal formatoptions-=wa
 
 setlocal formatoptions-=a  " no automatic formating
-endfor
 
 " wrap at 80 columns
 setlocal textwidth=80
