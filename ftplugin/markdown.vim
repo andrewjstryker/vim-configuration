@@ -12,13 +12,26 @@ if has("spell")
   setlocal spell spelllang=en_us
 endif
 
-" markdown doesn't directly support comments
-setlocal formatoptions-=c
+" vim-markdown configuration
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_follow_anchor = 1
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_new_list_item_indent = 2
+let g:vim_markdown_autowrite = 1
+
+" Set formating options
+
+" comments, from a vim
+setlocal formatoptions+=t  " auto-wrap text
+setlocal formatoptions+=c  " auto-wrap comments
+setlocal formatoptions-=wa
+
+setlocal formatoptions-=a  " no automatic formating
+endfor
 
 " wrap at 80 columns
 setlocal textwidth=80
-setlocal formatoptions+=t
-setlocal formatoptions-=wa
 
 setlocal shiftwidth=2
 setlocal softtabstop=2
