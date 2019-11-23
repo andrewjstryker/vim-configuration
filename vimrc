@@ -83,6 +83,7 @@ set nolist		" do not show listchars by default
 set listchars=tab:»·	" list characters (»· will not work on all terminals)
 set listchars+=trail:·,extends:¤
 set mouse=		" disable mouse in Normal, Visual, Insert, and Command
+set mousehide		" hide the mouse pointer while typing (gui only)
 set mousemodel=extend	" right button extends selection, middle pastes
 set nrformats-=octal    " don't use octal numbers with 
 set printoptions+=syntax:off,paper:letter	" options for hardcopy
@@ -170,25 +171,26 @@ endif
 
 " color and GUI terminal settings
 if &t_Co > 1 || has("gui_running")
-  syntax on
-  " prefer solarized colorscheme
-  " assume that terminal emulator uses the solarized palette
-  try
-    if has("gui_running")
-      set background=light
-      " TODO: need exception catching and fallbacks
-      set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
-    else
-      set background=dark
-      if &term == "xterm"
-        " otherwise, this will look horrible
-        set t_Co=16
-      endif
-    endif
-    colorscheme solarized
-  catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme default " standard colorscheme is a safe choice
-  endtry
+    syntax on
+    " prefer solarized colorscheme
+    " assume that terminal emulator uses the solarized palette
+    try
+        if has("gui_running")
+            set background=light
+            " TODO: need exception catching and fallbacks
+            set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+        else
+            set background=dark
+            if &term == "xterm"
+                " otherwise, this will look horrible
+                set t_Co=16
+            endif
+        endif
+        let g:solarized_termtrans = 1
+        colorscheme solarized
+    catch /^Vim\%((\a\+)\)\=:E185/
+        colorscheme default " standard colorscheme is a safe choice
+    endtry
 endif
 
 " begin editing at last cursor position, if possible (must be after plugins)
