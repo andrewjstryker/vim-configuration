@@ -16,9 +16,6 @@
 [submodule "pack/vim-fugitive/start/vim-fugitive"]
 	path = pack/vim-fugitive/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/vim-git/start/vim-git"]
-	path = pack/vim-git/start/vim-git
-	url = https://github.com/tpope/vim-git.git
 [submodule "pack/vim-ledger/start/vim/ledger"]
 	path = pack/vim-ledger/start/vim-ledger
 	url = https://github.com/ledger/vim-ledger.git
@@ -49,9 +46,6 @@
 [submodule "pack/vim-redact-pass/start/vim-redact-pass"]
 	path = pack/vim-redact-pass/start/vim-redact-pass
 	url = https://sanctum.geek.nz/code/vim-redact-pass.git
-[submodule "pack/vim-taskwarrior/start/vim-taskwarrior"]
-	path = pack/vim-taskwarrior/start/vim-taskwarrior
-	url = https://github.com/blindFS/vim-taskwarrior.git
 [submodule "pack/vim-surround/start/vim-surround"]
 	path = pack/vim-surround/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -91,9 +85,6 @@
 [submodule "pack/indentpython.vim/start/indentpython.vim"]
 	path = pack/indentpython.vim/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim.git
-[submodule "pack/xmledit/after/xmledit"]
-	path = pack/xmledit/start/xmledit
-	url = https://github.com/sukima/xmledit.git
 [submodule "pack/goyo.vom/start/goyo.vim"]
 	path = pack/goyo.vim/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
@@ -127,9 +118,6 @@
 [submodule "pack/gundo.vim/start/gundo.vim"]
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "pack/nerdcommenter/start/nerdcommenter"]
-	path = pack/nerdcommenter/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
 	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
@@ -142,3 +130,6 @@
 [submodule "pack/vim-airline-themes/start/vim-airline-themes"]
 	path = pack/vim-airline-themes/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/vim-commentary/start/vim-commentary"]
+	path = pack/vim-commentary/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
