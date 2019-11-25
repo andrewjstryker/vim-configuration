@@ -25,6 +25,7 @@ let g:vim_markdown_autowrite = 1
 " comments, from a vim
 setlocal formatoptions+=t  " auto-wrap text
 setlocal formatoptions+=c  " auto-wrap comments
+setlocal formatoptions-=q  " do not allow comment formating with "gq"
 setlocal formatoptions-=w  " do not use trailing whitespace as paragraph marker
 setlocal formatoptions-=a  " no automatic formating
 
