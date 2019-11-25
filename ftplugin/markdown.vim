@@ -27,6 +27,7 @@ setlocal formatoptions+=t  " auto-wrap text
 setlocal formatoptions+=c  " auto-wrap comments
 setlocal formatoptions-=q  " do not allow comment formatting with "gq"
 setlocal formatoptions-=w  " do not use trailing whitespace as paragraph marker
+setlocal formatoptions-=r  " do not insert comment leader after return
 setlocal formatoptions-=a  " no automatic formating
 
 " wrap at 80 columns
