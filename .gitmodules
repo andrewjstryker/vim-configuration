@@ -136,3 +136,6 @@
 [submodule "pack/vim-commentary/start/vim-commentary"]
 	path = pack/vim-commentary/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/vim-obsession/opt/vim-obsession"]
+	path = pack/vim-obsession/opt/vim-obsession
+	url = https://github.com/tpope/vim-obsession
