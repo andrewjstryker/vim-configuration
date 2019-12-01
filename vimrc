@@ -185,6 +185,7 @@ if &t_Co > 1 || has("gui_running")
                 set t_Co=16
             endif
         endif
+        let g:solarized_termtrans = 1
         colorscheme solarized
     catch /^Vim\%((\a\+)\)\=:E185/
         colorscheme default " standard colorscheme is a safe choice

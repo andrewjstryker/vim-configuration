@@ -28,7 +28,7 @@ packages I don't use.
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [OS Utilities](#os-utilities)
-  * [Enhanced editing](#enhanced-editing)
+  * [Editing tools](#editing-tools)
   * [Text Documents](#text-documents)
   * [Data files](#data-files)
   * [Extra file type support](#extra-file-type-support)
@@ -51,16 +51,29 @@ packages I don't use.
 
 This project includes numerous packages as submodules.
 
+<!--
 Here's what I need in my Vim configuration:
 
-- Looks good
+- Looks good. If I'm going to stare at a screen, let's put some effort into
+  making it look good.
 
--
+- Loads quickly. Vim is a test editor. Not an IDE or operating system (e.g.,
+  emacs). I want to quickly cycle through opening, editing, and closing files.
+
+- Provides sensible configuration. I don't want to tweak settings as part of
+  a workflow. The more time I spend messing with Vim, the less I get done.
+
+- Supports *light* programming tasks.
+
+- Adapts to environment. There's no need to load a `git` support if you don't
+  have `git` installed.
+
+-->
 
 ### Interface
 
 - [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized):
-  [the best color scheme
+  [the most important and best color scheme
   ever.](https://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/).
 
 - [**vim-stay**](https://github.com/zhimsel/vim-stay): automated view session
@@ -69,14 +82,18 @@ Here's what I need in my Vim configuration:
   without requiring you to do anything after configuring your vimrc.
 
 - [**goyo.vim**](https://github.com/junegunn/limelight.vim): distraction free
-  writing. This plugin removes status bars and numbering when you need to
-  focus on writing.
+  writing. This plugin removes status bars and numbering when you want focus.
 
 - [**limelight.vim**](https://github.com/junegunn/limelight.vim): hyper-focussed
   writing. This is mostly useful as a compliment to Goyo.
 
-- [**supertab****](https://github.com/ervandew/supertab): allows you to use
-  <kbd>Tab</kbd> for all your insert completion needs
+- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds.
+
+- [**EasyMotion**](https://github.com/easymotion/vim-easymotion): jump via
+  selection rather than counts.
+
+- [**repeat.vim**](https://github.com/tpope/vim-repeat): allow the repeat
+  command (`.`) to work with plugin maps.
 
 ### OS Utilities
 
@@ -88,23 +105,25 @@ Extend Vim's interface for working with the host operating system:
 - [**nerdtree-git-plugin**](//github.com/Xuyuanp/nerdtree-git-plugin): NERDTree
   plugin that shows git status
 
-### Enhanced editing
+### Editing tools
 
-- [**FastFold**](https://github.com/Konfekt/FastFold): speed-up automatic folds
+- [**supertab****](https://github.com/ervandew/supertab): allows you to use
+  <kbd>Tab</kbd> for all your insert completion needs.
 
 - [**gundo.vim**](https://github.com/sjl/gundo.vim): traverse Vim's undo-tree.
 
 - [**multiple-cursors**](https://github.com/terryma/vim-multiple-cursors): edit
   multiple text objects at once.
 
-- [**tabular**](https://github.com/godlygeek/tabular): align text into tables
+- [**tabular**](https://github.com/godlygeek/tabular): align text into tables.
 
 ### Text Documents
 
 These plugins extend Vim's built-in support for editing text documents:
 
 - [**LaTeX-Box**](https://github.com/LaTeX-Box-Team/LaTeX-Box): lightweight
-  support for editing LaTeX files
+  support for editing LaTeX files, including compilation with `latexmk`,
+  completion commands, table of contents for navigating large files, and more.
 
 - [**vim-markdown**](https://github.com/vim-pandoc/vim-rmarkdown): syntax
   highlighting, matching rules and mappings for [the original
@@ -113,7 +132,7 @@ These plugins extend Vim's built-in support for editing text documents:
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-I'm **not** using the following popular and excellent plugins:
+I'm **not** using the following popular and excellent plugin:
 
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
@@ -130,35 +149,62 @@ I'm **not** using the following popular and excellent plugins:
 
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
+=======
+I'm **not** using the following package:
+
+- [**xmledit**](http://github.com/sukima/xmledit): support for editing XML
+  documents. The package is no longer maintained and do not work with XML files
+  frequently enough to learn an XML optimized interface.
 
 ### Extra file type support
 
+Plugins with better support for certain file types:
+
+- [**vim-gnupg**](https://github.com/jamessan/vim-gnupg): prevent saving
+  potentially sensitive information with working with PGP files.
+
 - [**jq.vim**](//github.com/vito-c/jq.vim): highlighting
   [`jq`](https://stedolan.github.io/jq/manual/) files. `jq` is an excellent
-  utility for manipulatingh JSON files.
+  utility for manipulating JSON files.
 
 - [**Dockerfile.vim**](https://github.com/ekalinin/Dockerfile.vim): better
-  syntax file support plus snippets
+  syntax file support plus snippets.
 
 ### Programming
+
+Plugins for a better programming experience:
 
 - [**SimplyFold**](https://github.com/tmhedberg/SimpylFold): better folding for
   Python files.
 
 - [**Syntastic**](https://github.com/vim-syntastic/syntastic.): a syntax
-  checking plugin that runs files through external syntax checkers
+  checking plugin that runs files through external syntax checkers.
+
+- [**Nvim-R**](https://github.com/jalvesaq/Nvim-R): editing environment and
+  interactive interpreter interface for R.
+
+- [**indentpython**](https://github.com/vim-scripts/indentpython.vim): conform
+  Python file indenting with PEP 8
+
+<!--
+Describe the plugin that I'm **not** using.
+-->
 
 ### Vim utilities
 
 - [**NrrwRgn**](https://github.com/chrisbra/NrrwRgn): make a region
-  inaccessible to focus attention on another region. This is a dependency for a
-  few other plugins.
+  inaccessible to focus attention on another region. This is a dependency for
+  vim-airline and vim-markdown.
 
-- [**tlib_vim**](): defines function common to several vim packages
-  <!--
-  - package 1
-  - paktong 2
-  -->
+- [**vim-addon-mw-utils**](https://github.com/MarcWeber/vim-addon-manager-known-repositories):
+  various utilities such as caching interpreted contents of files and advanced
+  globing. Dependency for vim-snipmate.
+
+<!-- why denite? -->
+
+- [**vim-tmux-focus-events**](https://github.com/tmux-plugins/vim-tmux-focus-events):
+  patch for broken `FocusGained` and `FocusLost` autocommand events in terminal
+  vim
 
 ## Installation
 
