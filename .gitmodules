@@ -133,3 +133,6 @@
 [submodule "pack/vim-airline-themes/start/vim-airline-themes"]
 	path = pack/vim-airline-themes/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/vim-obsession/opt/vim-obsession"]
+	path = pack/vim-obsession/opt/vim-obsession
+	url = https://github.com/tpope/vim-obsession
