@@ -118,9 +118,6 @@
 [submodule "pack/gundo.vim/start/gundo.vim"]
 	path = pack/gundo.vim/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "pack/nerdcommenter/start/nerdcommenter"]
-	path = pack/nerdcommenter/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
 	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
@@ -130,3 +127,9 @@
 [submodule "pack/vim-addon-mw-utils/start/vim-addon-mw-utils"]
 	path = pack/vim-addon-mw-utils/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/vim-airline-themes/start/vim-airline-themes"]
+	path = pack/vim-airline-themes/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/vim-commentary/start/vim-commentary"]
+	path = pack/vim-commentary/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
