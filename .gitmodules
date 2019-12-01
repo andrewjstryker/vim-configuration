@@ -133,7 +133,3 @@
 [submodule "pack/vim-airline-themes/start/vim-airline-themes"]
 	path = pack/vim-airline-themes/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-||||||| merged common ancestors
->>>>>>>>> Temporary merge branch 2
-=======
->>>>>>> fix-vim-tmux-focus-events
