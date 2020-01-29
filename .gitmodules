@@ -139,3 +139,6 @@
 [submodule "pack/vim-obsession/opt/vim-obsession"]
 	path = pack/vim-obsession/opt/vim-obsession
 	url = https://github.com/tpope/vim-obsession
+[submodule "pack/Nvim-R/opt/Nvim-R"]
+	path = pack/Nvim-R/opt/Nvim-R
+	url = https://github.com/jalvesaq/Nvim-R.git
