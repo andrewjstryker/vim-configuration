@@ -142,3 +142,6 @@
 [submodule "pack/vim-tmux-navigator/start/vim-tmux-navigator"]
 	path = pack/vim-tmux-navigator/start/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "pack/vim-tmux/start"]
+	path = pack/vim-tmux/start
+	url = https://github.com/tmux-plugins/vim-tmux.git
