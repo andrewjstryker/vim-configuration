@@ -121,9 +121,6 @@
 [submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
 	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
-[submodule "pack/vim-tmux-focus-events/start/vim-tmux-focus-events"]
-	path = pack/vim-tmux-focus-events/start/vim-tmux-focus-events
-	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
 [submodule "pack/tlib_vim/start/tlib_vim"]
 	path = pack/tlib_vim/start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
