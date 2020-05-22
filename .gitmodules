@@ -133,9 +133,6 @@
 [submodule "pack/vim-obsession/opt/vim-obsession"]
 	path = pack/vim-obsession/opt/vim-obsession
 	url = https://github.com/tpope/vim-obsession
-[submodule "pack/Nvim-R/opt/Nvim-R"]
-	path = pack/Nvim-R/start/Nvim-R
-	url = https://github.com/jalvesaq/Nvim-R.git
 [submodule "pack/vim-tmux-navigator/start/vim-tmux-navigator"]
 	path = pack/vim-tmux-navigator/start/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
