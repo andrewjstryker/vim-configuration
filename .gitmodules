@@ -136,3 +136,12 @@
 [submodule "pack/vim-tmux-navigator/start/vim-tmux-navigator"]
 	path = pack/vim-tmux-navigator/start/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "pack/vim-pandoc/start/vim-pandoc"]
+	path = pack/vim-pandoc/start/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "pack/vim-pandoc/start/vim-pandoc-syntax"]
+	path = pack/vim-pandoc/start/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
+[submodule "pack/vim-pandoc/start/vim-rmarkdown"]
+	path = pack/vim-pandoc/start/vim-rmarkdown
+	url = https://github.com/vim-pandoc/vim-rmarkdown.git
