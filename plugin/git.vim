@@ -13,3 +13,7 @@ if !executable("git")
   let g:loaded_fugitive = 1
   finish
 endif
+
+" The interaction of gitgutter and Solarized breaks something.
+" This is a known issue... the Solarized project is inactive.
+highlight! link SignColumn LineNr
