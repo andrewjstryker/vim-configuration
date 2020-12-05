@@ -354,7 +354,7 @@ Here are a few places to learn more about Vim scripting, plugins/packages, and G
 
 - [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscript the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
