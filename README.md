@@ -25,7 +25,6 @@ packages I don't use.
 
 <!-- vim-markdown-toc GFM -->
 
-<<<<<<< HEAD
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [Vim Utilities](#vim-utilities)
@@ -88,6 +87,27 @@ packages I don't use.
   * [References](#references)
   * [License](#license)
 >>>>>>> configure-markdown
+||||||| 28ed299
+  * [Included Packages](#included-packages)
+    * [Interface](#interface)
+    * [OS Utilities](#os-utilities)
+    * [Editing tools](#editing-tools)
+    * [Text Documents](#text-documents)
+    * [Data files](#data-files)
+* [character delimited files](#character-delimited-files)
+    * [Extra file type support](#extra-file-type-support)
+    * [Programming](#programming)
+    * [Vim utilities](#vim-utilities)
+  * [Installation](#installation)
+  * [Managing Plugins and Packages](#managing-plugins-and-packages)
+    * [Adding plugins](#adding-plugins)
+    * [Adding packages](#adding-packages)
+    * [Updating plugins or packages](#updating-plugins-or-packages)
+  * [Future Plans](#future-plans)
+  * [Contributing](#contributing)
+  * [Contacting the Maintainer](#contacting-the-maintainer)
+  * [References](#references)
+  * [License](#license)
 
 <!-- vim-markdown-toc -->
 
@@ -185,8 +205,6 @@ These plugins extend Vim's built-in support for editing text documents:
 
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
-
-I'm **not** using the following popular and excellent plugin:
 
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
