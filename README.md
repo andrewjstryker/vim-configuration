@@ -25,6 +25,7 @@ packages I don't use.
 
 <!-- vim-markdown-toc GFM -->
 
+<<<<<<< HEAD
 * [Included Packages](#included-packages)
   * [Interface](#interface)
   * [Vim Utilities](#vim-utilities)
@@ -45,6 +46,48 @@ packages I don't use.
 * [Contacting the Maintainer](#contacting-the-maintainer)
 * [References](#references)
 * [License](#license)
+||||||| 9fc7b9d
+* [Included Packages](#included-packages)
+  * [Interface](#interface)
+  * [OS Utilities](#os-utilities)
+  * [Editing tools](#editing-tools)
+  * [Text Documents](#text-documents)
+  * [Data files](#data-files)
+  * [Extra file type support](#extra-file-type-support)
+  * [Programming](#programming)
+  * [Vim utilities](#vim-utilities)
+* [Installation](#installation)
+* [Managing Plugins and Packages](#managing-plugins-and-packages)
+  * [Adding plugins](#adding-plugins)
+  * [Adding packages](#adding-packages)
+  * [Updating plugins or packages](#updating-plugins-or-packages)
+* [Future Plans](#future-plans)
+* [Contributing](#contributing)
+* [Contacting the Maintainer](#contacting-the-maintainer)
+* [References](#references)
+* [License](#license)
+=======
+  * [Included Packages](#included-packages)
+    * [Interface](#interface)
+    * [OS Utilities](#os-utilities)
+    * [Editing tools](#editing-tools)
+    * [Text Documents](#text-documents)
+    * [Data files](#data-files)
+* [character delimited files](#character-delimited-files)
+    * [Extra file type support](#extra-file-type-support)
+    * [Programming](#programming)
+    * [Vim utilities](#vim-utilities)
+  * [Installation](#installation)
+  * [Managing Plugins and Packages](#managing-plugins-and-packages)
+    * [Adding plugins](#adding-plugins)
+    * [Adding packages](#adding-packages)
+    * [Updating plugins or packages](#updating-plugins-or-packages)
+  * [Future Plans](#future-plans)
+  * [Contributing](#contributing)
+  * [Contacting the Maintainer](#contacting-the-maintainer)
+  * [References](#references)
+  * [License](#license)
+>>>>>>> configure-markdown
 
 <!-- vim-markdown-toc -->
 
@@ -366,7 +409,7 @@ Here are a few places to learn more about Vim scripting, plugins/packages, and G
 
 - [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscript the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
