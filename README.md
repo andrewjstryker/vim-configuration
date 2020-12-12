@@ -132,8 +132,6 @@ These plugins extend Vim's built-in support for editing text documents:
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-I'm **not** using the following popular and excellent plugin:
-
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
   environment. However, this plugin only makes senses if you regularly use
