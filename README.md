@@ -25,26 +25,25 @@ packages I don't use.
 
 <!-- vim-markdown-toc GFM -->
 
-  * [Included Packages](#included-packages)
-    * [Interface](#interface)
-    * [OS Utilities](#os-utilities)
-    * [Editing tools](#editing-tools)
-    * [Text Documents](#text-documents)
-    * [Data files](#data-files)
-* [character delimited files](#character-delimited-files)
-    * [Extra file type support](#extra-file-type-support)
-    * [Programming](#programming)
-    * [Vim utilities](#vim-utilities)
-  * [Installation](#installation)
-  * [Managing Plugins and Packages](#managing-plugins-and-packages)
-    * [Adding plugins](#adding-plugins)
-    * [Adding packages](#adding-packages)
-    * [Updating plugins or packages](#updating-plugins-or-packages)
-  * [Future Plans](#future-plans)
-  * [Contributing](#contributing)
-  * [Contacting the Maintainer](#contacting-the-maintainer)
-  * [References](#references)
-  * [License](#license)
+* [Included Packages](#included-packages)
+  * [Interface](#interface)
+  * [OS Utilities](#os-utilities)
+  * [Editing tools](#editing-tools)
+  * [Text Documents](#text-documents)
+  * [Data files](#data-files)
+  * [Extra file type support](#extra-file-type-support)
+  * [Programming](#programming)
+  * [Vim utilities](#vim-utilities)
+* [Installation](#installation)
+* [Managing Plugins and Packages](#managing-plugins-and-packages)
+  * [Adding plugins](#adding-plugins)
+  * [Adding packages](#adding-packages)
+  * [Updating plugins or packages](#updating-plugins-or-packages)
+* [Future Plans](#future-plans)
+* [Contributing](#contributing)
+* [Contacting the Maintainer](#contacting-the-maintainer)
+* [References](#references)
+* [License](#license)
 
 <!-- vim-markdown-toc -->
 
@@ -150,7 +149,7 @@ I'm **not** using the following popular and excellent plugin:
 
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
-=======
+
 I'm **not** using the following package:
 
 - [**xmledit**](http://github.com/sukima/xmledit): support for editing XML
