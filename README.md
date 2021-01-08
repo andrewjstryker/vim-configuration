@@ -132,8 +132,6 @@ These plugins extend Vim's built-in support for editing text documents:
 - [**vim-markdown-toc**](https://github.com/mzlogin/vim-markdown-toc): generate
   table of contents for Markdown files.
 
-I'm **not** using the following popular and excellent plugin:
-
 - [**vim-pandoc**](https://github.com/vim-pandoc): integration with
   [pandoc](https://johnmacfarlane.net/pandoc), a system for a comfortable writing
   environment. However, this plugin only makes senses if you regularly use
@@ -149,7 +147,7 @@ I'm **not** using the following popular and excellent plugin:
 
 - [**csv.vim**](https://github.com/chrisbra/csv.vim): manipulate column data in
   character delimited files
-=======
+
 I'm **not** using the following package:
 
 - [**xmledit**](http://github.com/sukima/xmledit): support for editing XML
@@ -354,7 +352,7 @@ Here are a few places to learn more about Vim scripting, plugins/packages, and G
 
 - [VimAwesome**](https://vimawesome.com) has a superb interface to Vim plugins.
 
-- [Learn Vimscrtip the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
+- [Learn Vimscript the Hard Way**](https://learnvimscriptthehardway.stevelosh.com/)
 
 - [Vim: So long Pathogen, hello native package
   loading](https://shapeshed.com/vim-packages/) nicely explains how Vim's native
