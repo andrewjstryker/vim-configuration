@@ -153,6 +153,15 @@ if has("unix")
   source $VIMRUNTIME/ftplugin/man.vim
 endif
 
+" need a home for this:
+let g:ScreenImpl = 'Tmux'
+
+let vimrplugin_assign = 0
+let vimrplugin_only_in_tmux = 1
+let vimrplugin_vsplit = 1
+
+let g:snipMate = { 'snippet_version' : 1 }
+
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
 " Options for terminal display
