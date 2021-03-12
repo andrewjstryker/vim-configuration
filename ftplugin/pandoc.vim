@@ -12,7 +12,7 @@ if has("spell")
 endif
 
 " Set formating options
-setlocal formatoptions+=t  " auto-wrap text
+setlocal formatoptions-=t  " no auto-wrap text, interferes with fenced code
 setlocal formatoptions+=c  " auto-wrap comments
 setlocal formatoptions-=q  " do not allow comment formatting with "gq"
 setlocal formatoptions-=w  " do not use trailing whitespace as paragraph marker
@@ -27,9 +27,9 @@ let g:pandoc#filetypes#handled = ["pandoc", "rst", "markdow"]
 let g:pandoc#filetypes#pandoc_markdown = 0
 " let g:pandoc#modules#enabled
 " let g:pandoc#modules#disabled
-let g:pandoc#formatting#mode = "hA"
+let g:pandoc#formatting#mode = "h"
 let g:pandoc#formatting#textwidth = 79
-" let g:pandoc#formatting#smart_autoformat_on_cursormoved
+" let g:pandoc#formatting#smart_autoformat_on_cursormoved = 1
 " let g:pandoc#formatting#equalprg
 " let g:pandoc#formatting#extra_equalprg
 " let g:pandoc#command#use_message_buffers
