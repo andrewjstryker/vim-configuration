@@ -31,7 +31,12 @@ packadd Nvim-R
 let R_assign = 3
 
 " fenced languages
-let g:markdown_fenced_languages = ['r', 'python']
-let g:rmd_fenced_languages = ['r', 'python']
+let g:markdown_fenced_languages = ['r', 'python', 'sql']
+let g:rmd_fenced_languages = ['r', 'python', 'sql']
+
+" shortcuts
+iabbrev << <-
+iabbrev >> %>%
+iabbrev >>> %>%
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
