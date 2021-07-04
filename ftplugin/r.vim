@@ -39,4 +39,8 @@ iabbrev << <-
 iabbrev >> %>%
 iabbrev >>> %>%
 
+" Map "Send line" and "Send selection" to space
+vmap <Space> <Plug>RDSendSelection
+nmap <Space> <Plug>RDSendLine
+
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
