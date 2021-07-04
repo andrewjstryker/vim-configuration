@@ -43,4 +43,7 @@ iabbrev >>> %>%
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 
+" Using syntax folding
+let r_syntax_folding = 1
+
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
