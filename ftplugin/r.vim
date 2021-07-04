@@ -27,8 +27,8 @@ set expandtab
 
 packadd Nvim-R
 
-" convert ' _ ' to ' <- '
-let R_assign = 3
+" disable converting ' _ ' to ' <- '
+let R_assign = 0
 
 " fenced languages
 let g:markdown_fenced_languages = ['r', 'python', 'sql']
