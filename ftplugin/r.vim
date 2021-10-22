@@ -27,8 +27,8 @@ set expandtab
 
 packadd Nvim-R
 
-" convert ' _ ' to ' <- '
-let R_assign = 3
+" disable converting ' _ ' to ' <- '
+let R_assign = 0
 
 " fenced languages
 let g:markdown_fenced_languages = ['r', 'python', 'sql']
@@ -37,6 +37,15 @@ let g:rmd_fenced_languages = ['r', 'python', 'sql']
 " shortcuts
 iabbrev << <-
 iabbrev >> %>%
-iabbrev >>> %>%
+iabbrev >>> |>
+" older style, for R < 4.1.0
+iabbrev >>>> %>%
+
+" Map "Send line" and "Send selection" to space
+vmap <Space> <Plug>RDSendSelection
+nmap <Space> <Plug>RDSendLine
+
+" Using syntax folding
+let r_syntax_folding = 1
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
