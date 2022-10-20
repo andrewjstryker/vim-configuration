@@ -5,13 +5,13 @@
 	path = pack/NrrwRgn/start/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
 [submodule "pack/Nvim-R/start/Nvim-R"]
-	path = pack/Nvim-R/start/Nvim-R
+	path = pack/analytics/start/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R.git
 [submodule "pack/LaTeX-Box/start/LaTeX-Box"]
 	path = pack/LaTeX-Box/opt/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "pack/csv.vim/start/csv.vim"]
-	path = pack/csv.vim/start/csv.vim
+	path = pack/analytics/start/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
 [submodule "pack/vim-fugitive/start/vim-fugitive"]
 	path = pack/vim-fugitive/start/vim-fugitive
@@ -140,11 +140,11 @@
 	path = pack/vim-tmux/start
 	url = https://github.com/tmux-plugins/vim-tmux.git
 [submodule "pack/vim-pandoc/start/vim-pandoc"]
-	path = pack/vim-pandoc/start/vim-pandoc
+	path = pack/writing/start/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
 [submodule "pack/vim-pandoc/start/vim-pandoc-syntax"]
-	path = pack/vim-pandoc/start/vim-pandoc-syntax
+	path = pack/writing/start/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
 [submodule "pack/vim-pandoc/start/vim-rmarkdown"]
-	path = pack/vim-pandoc/start/vim-rmarkdown
+	path = pack/writing/start/vim-rmarkdown
 	url = https://github.com/vim-pandoc/vim-rmarkdown.git
