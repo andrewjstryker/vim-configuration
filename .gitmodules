@@ -148,3 +148,6 @@
 [submodule "pack/vim-pandoc/start/vim-rmarkdown"]
 	path = pack/vim-pandoc/start/vim-rmarkdown
 	url = https://github.com/vim-pandoc/vim-rmarkdown.git
+[submodule "pack/productivity/start/vimwiki"]
+	path = pack/productivity/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki
