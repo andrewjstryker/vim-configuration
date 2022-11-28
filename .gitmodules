@@ -148,3 +148,6 @@
 [submodule "pack/writing/start/vim-latex"]
 	path = pack/writing/start/vim-latex
 	url = https://github.com/vim-latex/vim-latex
+[submodule "pack/productivity/start/vimwiki"]
+	path = pack/productivity/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki
