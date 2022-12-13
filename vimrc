@@ -164,6 +164,15 @@ let g:snipMate = { 'snippet_version' : 1 }
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
+" Vimwiki
+"
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+
+" do not make temporary wikis--I'm not looking for Org mode ;-)
+let g:vimwiki_global_ext = 0
+
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+"
 " Options for terminal display
 "
 " NOTE: This logic configures Vim for the Solarized colorscheme. If the
