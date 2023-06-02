@@ -151,3 +151,6 @@
 [submodule "pack/productivity/start/vimwiki"]
 	path = pack/productivity/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/writing/start/unicode.vim"]
+	path = pack/writing/start/unicode.vim
+	url = https://github.com/chrisbra/unicode.vim.git
