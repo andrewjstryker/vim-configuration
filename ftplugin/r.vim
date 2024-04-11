@@ -36,10 +36,7 @@ let g:rmd_fenced_languages = ['r', 'python', 'sql']
 
 " shortcuts
 iabbrev << <-
-iabbrev >> %>%
-iabbrev >>> |>
-" older style, for R < 4.1.0
-iabbrev >>>> %>%
+iabbrev >> |>
 
 " Map "Send line" and "Send selection" to space
 vmap <Space> <Plug>RDSendSelection
