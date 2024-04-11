@@ -170,6 +170,7 @@ let g:snipMate = { 'snippet_version' : 1 }
 
 " do not make temporary wikis--I'm not looking for Org mode ;-)
 let g:vimwiki_global_ext = 0
+let g:vimwiki_list = [{'path': '~/.local/vimwiki'}]
 
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 "
